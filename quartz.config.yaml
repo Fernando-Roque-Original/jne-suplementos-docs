@@ -9,7 +9,7 @@ configuration:
   analytics:
     provider: plausible
   locale: pt-BR
-  baseUrl: andrad21.github.io/jne-suplementos-docs
+  baseUrl: Fernando-Roque-Original.github.io/jne-suplementos-docs
   ignorePatterns:
     - private
     - templates
@@ -233,8 +233,8 @@ plugins:
     enabled: true
     options:
       links:
-        Site da loja: https://github.com/andrad21/jne-suplementos
-        Código no GitHub: https://github.com/andrad21/jne-suplementos
+        Repositório do manual: https://github.com/Fernando-Roque-Original/jne-suplementos-docs
+        Código da loja: https://github.com/andrad21/jne-suplementos
     layout:
       position: footer
       priority: 50

@@ -15,7 +15,7 @@ O cofre é também a pasta `content` do Quartz. Assim, qualquer nota salva no Ob
 4. Envie as mudanças ao GitHub.
 5. O workflow em `.github/workflows/deploy.yml` gera e publica o site no GitHub Pages.
 
-O endereço configurado é `andrad21.github.io/jne-suplementos-docs`. Caso o repositório tenha outro nome ou proprietário, altere `baseUrl` em `quartz.config.yaml`.
+O endereço configurado é `Fernando-Roque-Original.github.io/jne-suplementos-docs` e o repositório é `Fernando-Roque-Original/jne-suplementos-docs`.
 
 > [!todo] Ação única no GitHub
 > Em **Settings → Pages → Source**, selecione **GitHub Actions**.
