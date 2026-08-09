@@ -126,3 +126,9 @@ Se a página precisar de `useState`, cliques ou acesso ao navegador, coloque `"u
 ## Referência oficial
 
 A arquitetura segue o [App Router do Next.js](https://nextjs.org/docs/app), a orientação oficial de [migração a partir do Vite](https://nextjs.org/docs/app/guides/migrating/from-vite) e a separação entre [Server e Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components).
+
+## Publicação do site
+
+O repositório do site não possui atualmente um workflow de publicação. O build foi validado, mas o ambiente de produção ainda precisa ser escolhido.
+
+Servidor Node.js e contêiner suportam os recursos do Next.js. Outras plataformas podem exigir integração ou adaptador próprio. Se a loja continuar na Cloudflare, a equipe deve seguir a documentação vigente do provedor; a configuração anterior do Nitro foi removida e não é compatível com a nova saída. Consulte as [opções oficiais de implantação do Next.js](https://nextjs.org/docs/app/getting-started/deploying).
