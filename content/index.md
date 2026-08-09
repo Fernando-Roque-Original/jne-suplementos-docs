@@ -32,6 +32,10 @@ Procedimentos para editar o cofre, enviar alterações, publicar no GitHub Pages
 
 Registro das principais alterações realizadas no projeto.
 
+### [[06 - Código do site]]
+
+Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp.
+
 ```mermaid
 flowchart LR
   A[Cliente acessa a landing page] --> B[Busca e filtra produtos]
