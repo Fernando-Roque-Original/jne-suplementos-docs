@@ -17,5 +17,6 @@ O cofre é também a pasta `content` do Quartz. Assim, qualquer nota salva no Ob
 
 O endereço configurado é `Fernando-Roque-Original.github.io/jne-suplementos-docs` e o repositório é `Fernando-Roque-Original/jne-suplementos-docs`.
 
-> [!todo] Ação única no GitHub
-> Em **Settings → Pages → Source**, selecione **GitHub Actions**.
+## Configuração do GitHub Pages
+
+Em **Settings → Pages → Source**, selecione **GitHub Actions**.

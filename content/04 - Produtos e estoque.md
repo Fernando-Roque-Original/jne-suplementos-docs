@@ -5,10 +5,11 @@ tags: [catálogo, manutenção]
 
 # Produtos e estoque
 
-> [!important] Os dois lugares que você mais vai usar
-> **Imagens:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\assets\produtos`
->
-> **Nomes, preços, categorias e estoque:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\data\produtos.ts`
+## Arquivos principais
+
+**Imagens:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\assets\produtos`
+
+**Nomes, preços, categorias e estoque:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\data\produtos.ts`
 
 ## 1. Onde colocar as imagens
 
@@ -40,8 +41,7 @@ growth-whey-1kg-chocolate.webp
 max-titanium-pre-treino-300g-frutas-vermelhas.webp
 ```
 
-> [!warning] Não faça
-> Evite nomes como `Foto nova (1).jpg`, imagens retiradas de redes sociais com texto por cima ou fotos sem autorização de uso.
+Evite nomes como `Foto nova (1).jpg`, imagens retiradas de redes sociais com texto por cima ou fotos sem autorização de uso.
 
 ## 2. Onde cadastrar nomes, preços e estoque
 
@@ -130,5 +130,6 @@ O estoque de cada sabor será usado ao adicionar o produto ao carrinho.
 - [ ] Marca e descrição são reais.
 - [ ] O produto está com `ativo: true`.
 
-> [!warning] Antes de publicar
-> Troque todos os itens “Demo” por produtos reais e confirme autorização para uso das imagens e informações dos fabricantes.
+## Antes de publicar
+
+Troque todos os itens “Demo” por produtos reais e confirme a autorização de uso das imagens e informações dos fabricantes.

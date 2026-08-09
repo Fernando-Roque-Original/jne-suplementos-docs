@@ -15,5 +15,6 @@ Ao finalizar, a mensagem contém:
 - campos para nome e local de entrega;
 - pedido de confirmação de estoque, entrega e pagamento.
 
-> [!info] Limite do sistema
-> O site não cobra e não reserva estoque. A confirmação final acontece no WhatsApp, evitando divergências entre catálogo e atendimento.
+## Limites do sistema
+
+O site não realiza cobranças nem reserva estoque. A confirmação final acontece no WhatsApp para que a equipe confira disponibilidade, entrega e pagamento.

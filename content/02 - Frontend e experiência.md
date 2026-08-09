@@ -14,7 +14,6 @@ tags: [frontend, ux, acessibilidade]
 - Hierarquia visual esportiva, escura e de alto contraste.
 - Chamada clara para revisar o carrinho.
 
-O objetivo é reduzir etapas: o cliente descobre o produto e inicia a compra sem navegar por várias telas. O carrinho permanece como uma revisão focada antes do WhatsApp.
+A estrutura reduz a quantidade de etapas entre a consulta e o envio do pedido. O carrinho permanece como tela de revisão antes da abertura do WhatsApp.
 
-> [!tip] Conversão
-> Mantenha um único botão principal por contexto. No catálogo ele adiciona o produto; no carrinho ele envia o pedido.
+Cada contexto deve ter uma ação principal. No catálogo, a ação adiciona o produto. No carrinho, a ação envia o pedido.

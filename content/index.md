@@ -6,14 +6,11 @@ tags:
   - documentação
 ---
 
-# Central do projeto JNE Suplementos
+# Documentação da JNE Suplementos
 
-> [!success] Objetivo
-> Uma landing page rápida e responsiva na qual o cliente encontra produtos, monta o carrinho e envia um resumo completo para a equipe pelo WhatsApp.
+Este material registra a estrutura do site, o fluxo de pedidos e os procedimentos de manutenção do catálogo.
 
-Esta documentação explica as decisões, a arquitetura e como manter o projeto sem depender de conhecimento técnico avançado.
-
-## Comece por aqui
+## Índice
 
 - [[01 - Visão geral]]
 - [[02 - Frontend e experiência]]
@@ -30,5 +27,6 @@ flowchart LR
   D --> E[Envia resumo pelo WhatsApp]
 ```
 
-> [!warning] Catálogo demonstrativo
-> Os nomes, marcas e preços atuais são dados de demonstração. Antes de divulgar a loja, substitua-os pelos dados reais seguindo [[04 - Produtos e estoque]].
+## Estado do catálogo
+
+Os nomes, marcas e preços atuais são dados de teste. Antes de divulgar a loja, substitua-os pelos dados reais seguindo [[04 - Produtos e estoque]].
