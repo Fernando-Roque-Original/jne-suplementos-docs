@@ -5,15 +5,16 @@ tags: [carrinho, whatsapp, lógica]
 
 # Carrinho e WhatsApp
 
-O carrinho é salvo no navegador por `localStorage`. Ao carregar, o sistema valida a estrutura, descarta dados corrompidos e limita a quantidade ao estoque conhecido.
+O carrinho é salvo no navegador por `localStorage`. Ao carregar, o sistema valida os dados, descarta registros inválidos e limita a quantidade ao estoque conhecido.
 
-Ao finalizar, a mensagem contém:
+## Conteúdo da mensagem
 
 - produto e variação;
 - peso, quantidade e preço unitário;
-- subtotal de cada item e total do pedido;
+- subtotal de cada item;
+- valor total do pedido;
 - campos para nome e local de entrega;
-- pedido de confirmação de estoque, entrega e pagamento.
+- solicitação de confirmação de estoque, entrega e pagamento.
 
 ## Limites do sistema
 

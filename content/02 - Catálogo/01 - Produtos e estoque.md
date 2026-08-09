@@ -5,29 +5,31 @@ tags: [catálogo, manutenção]
 
 # Produtos e estoque
 
+Todos os caminhos desta página são relativos à pasta principal do repositório `jne-suplementos`. Isso permite usar o mesmo procedimento no Windows, macOS ou Linux.
+
 ## Arquivos principais
 
-**Imagens:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\assets\produtos`
+**Imagens:** `src/assets/produtos/`
 
-**Nomes, preços, categorias e estoque:** `C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\data\produtos.ts`
+**Nomes, preços, categorias e estoque:** `src/data/produtos.ts`
 
-## 1. Onde colocar as imagens
+## 1. Adicionar imagens
 
-Copie cada foto para a pasta:
+Copie a foto para:
 
 ```text
-C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\assets\produtos
+src/assets/produtos/
 ```
 
-Use preferencialmente:
+Recomendações:
 
 - formato `.webp` ou `.jpg`;
-- imagem quadrada entre `800 × 800` e `1200 × 1200` pixels;
+- imagem quadrada entre `800 x 800` e `1200 x 1200` pixels;
 - fundo branco ou limpo;
-- uma foto frontal da embalagem;
+- foto frontal da embalagem;
 - nome sem espaços, acentos ou caracteres especiais.
 
-### Padrão para nomes das imagens
+### Padrão para nomes
 
 ```text
 marca-produto-peso-sabor.webp
@@ -41,23 +43,23 @@ growth-whey-1kg-chocolate.webp
 max-titanium-pre-treino-300g-frutas-vermelhas.webp
 ```
 
-Evite nomes como `Foto nova (1).jpg`, imagens retiradas de redes sociais com texto por cima ou fotos sem autorização de uso.
+Evite nomes como `Foto nova (1).jpg`, imagens com texto por cima ou fotos sem autorização de uso.
 
-## 2. Onde cadastrar nomes, preços e estoque
+## 2. Cadastrar nomes, preços e estoque
 
-Abra este arquivo:
+Abra:
 
 ```text
-C:\Users\ferna\Desktop\jnesuplementos\jne-suplementos\src\data\produtos.ts
+src/data/produtos.ts
 ```
 
-Primeiro importe a imagem no começo do arquivo:
+Importe a imagem no início do arquivo:
 
 ```ts
 import imgCreatinaIntegral from "@/assets/produtos/integralmedica-creatina-300g.webp";
 ```
 
-Depois adicione o produto dentro da lista `produtos`:
+Adicione o produto dentro da lista `produtos`:
 
 ```ts
 {
@@ -76,26 +78,24 @@ Depois adicione o produto dentro da lista `produtos`:
 },
 ```
 
-## 3. Para que serve cada campo
+## 3. Campos do produto
 
-| Campo | Para que serve | Exemplo |
+| Campo | Função | Exemplo |
 |---|---|---|
 | `id` | Identificador único usado internamente | `creatina-integralmedica-300g` |
 | `nome` | Nome exibido no catálogo e WhatsApp | `Creatina Monohidratada 300g` |
-| `marca` | Marca usada também nos filtros | `Integralmédica` |
-| `categoria` | Grupo do produto | `creatina` |
-| `descricao` | Explicação curta e verdadeira | `Creatina pura...` |
+| `marca` | Marca exibida e usada na busca | `Integralmédica` |
+| `categoria` | Grupo usado pelo filtro | `creatina` |
+| `descricao` | Descrição curta do produto | `Creatina pura...` |
 | `preco` | Preço sem `R$`, usando ponto decimal | `99.90` |
 | `imagem` | Nome da importação feita no topo | `imgCreatinaIntegral` |
 | `peso` | Peso ou quantidade da embalagem | `300g` |
 | `estoque` | Quantidade disponível | `10` |
 | `ativo` | `true` mostra; `false` esconde | `true` |
-| `destaque` | Mostra na seção de destaques | `true` |
-| `maisVendido` | Mostra na seção de mais vendidos | `false` |
+| `destaque` | Inclui o item nos destaques | `true` |
+| `maisVendido` | Inclui o item nos mais vendidos | `false` |
 
 ## 4. Categorias permitidas
-
-Use exatamente um destes valores:
 
 - `whey-protein`
 - `creatina`
@@ -107,8 +107,6 @@ Use exatamente um destes valores:
 
 ## 5. Produtos com sabores
 
-Para sabores ou variações, acrescente:
-
 ```ts
 variacoes: [
   { id: "chocolate", nome: "Chocolate", estoque: 5 },
@@ -116,20 +114,19 @@ variacoes: [
 ],
 ```
 
-O estoque de cada sabor será usado ao adicionar o produto ao carrinho.
+Quando existem variações, o carrinho usa o estoque de cada sabor.
 
-## Checklist para publicar um produto
+## Checklist
 
-- [ ] A imagem está na pasta correta.
+- [ ] A imagem está em `src/assets/produtos/`.
 - [ ] O nome do arquivo não tem espaços ou acentos.
-- [ ] A importação da imagem foi adicionada.
+- [ ] A importação foi adicionada ao arquivo de produtos.
 - [ ] O `id` é único.
 - [ ] O preço usa ponto decimal e não contém `R$`.
 - [ ] A categoria está na lista permitida.
 - [ ] O estoque foi conferido.
-- [ ] Marca e descrição são reais.
 - [ ] O produto está com `ativo: true`.
 
 ## Antes de publicar
 
-Troque todos os itens “Demo” por produtos reais e confirme a autorização de uso das imagens e informações dos fabricantes.
+Troque os itens de teste por produtos reais e confirme a autorização de uso das imagens e informações dos fabricantes.
