@@ -26,7 +26,7 @@ Funcionamento do carrinho, persistência no navegador e geração da mensagem de
 
 ### [[04 - Publicação]]
 
-Procedimentos para editar o cofre, enviar alterações e publicar no GitHub Pages.
+Procedimentos para editar o cofre, enviar alterações, publicar no GitHub Pages e atualizar a versão do Quartz.
 
 ### [[05 - Histórico]]
 

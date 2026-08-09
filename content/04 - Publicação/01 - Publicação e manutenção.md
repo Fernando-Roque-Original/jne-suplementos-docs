@@ -23,3 +23,5 @@ As notas publicadas pelo Quartz ficam na pasta `content/`. O Obsidian pode abrir
 ## GitHub Pages
 
 O repositório usa GitHub Actions como fonte de publicação. Cada push na branch `v5` inicia um novo deploy.
+
+Consulte [[02 - Atualização do Quartz]] para preparar outro computador, colaborar com o projeto ou instalar uma versão mais recente do Quartz.
