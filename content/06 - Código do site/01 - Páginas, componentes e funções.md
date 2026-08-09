@@ -42,7 +42,7 @@ O primeiro comando verifica TypeScript e regras do código. O segundo confirma q
 
 | Caminho | Responsabilidade |
 | --- | --- |
-| `src/routes/` | Páginas e endereços do site |
+| `src/app/` | Páginas, layouts e endereços do Next.js |
 | `src/components/` | Partes reutilizáveis, como Header, Footer e cartão de produto |
 | `src/data/` | Produtos, categorias e tipos dos dados |
 | `src/config/` | Dados gerais da loja |
@@ -52,7 +52,7 @@ O primeiro comando verifica TypeScript e regras do código. O segundo confirma q
 
 ## Estrutura comum de todas as páginas
 
-O arquivo `src/routes/__root.tsx` é a estrutura principal. Ele envolve todas as páginas nesta ordem:
+O arquivo `src/app/layout.tsx` é a estrutura principal. Ele envolve todas as páginas nesta ordem:
 
 ```text
 Header
@@ -71,7 +71,7 @@ Edite esse arquivo para:
 - alterar o botão do carrinho;
 - mudar o comportamento do menu móvel.
 
-Depois de alterar, teste em tela grande e em tela pequena. Um link do Header deve apontar para uma rota existente em `src/routes/`.
+Depois de alterar, teste em tela grande e em tela pequena. Um link do Header deve apontar para uma rota existente em `src/app/`.
 
 ### Footer
 
@@ -79,13 +79,13 @@ Depois de alterar, teste em tela grande e em tela pequena. Um link do Header dev
 
 Edite esse arquivo para mudar a organização visual ou os textos fixos. Dados como telefone, endereço, horário e links sociais devem ser alterados preferencialmente em `src/config/loja.ts`, pois o mesmo dado pode ser usado em mais de um lugar.
 
-### Outlet
+### Children
 
-Dentro de `src/routes/__root.tsx`, o componente `<Outlet />` indica onde a página atual será renderizada. Não o remova. Sem ele, nenhuma rota interna aparece entre o Header e o Footer.
+Dentro de `src/app/layout.tsx`, a variável `{children}` indica onde a página atual será renderizada. Não a remova. Sem ela, nenhuma rota interna aparece entre o Header e o Footer.
 
 ### Providers
 
-O `CarrinhoProvider` disponibiliza o carrinho para todas as páginas. O `QueryClientProvider` prepara o gerenciamento de dados da aplicação. O `Toaster` exibe avisos breves, como a confirmação de que um item foi adicionado.
+O `CarrinhoProvider` disponibiliza o carrinho para todas as páginas. O `Toaster` exibe avisos breves, como a confirmação de que um item foi adicionado. Ambos são reunidos em `src/app/providers.tsx`.
 
 Não retire esses componentes sem revisar todos os locais que dependem deles.
 
@@ -93,7 +93,7 @@ Não retire esses componentes sem revisar todos os locais que dependem deles.
 
 ### Página inicial
 
-Arquivo: `src/routes/index.tsx`
+Arquivos: `src/app/page.tsx` e `src/app/PaginaInicial.tsx`
 
 Endereço: `/`
 
@@ -108,13 +108,13 @@ Ela reúne:
 - busca rápida e catálogo completo;
 - apresentação da loja.
 
-Para trocar a imagem do banner, substitua `src/assets/hero.jpg` por outra imagem com o mesmo nome ou importe um novo arquivo em `src/routes/index.tsx`.
+Para trocar a imagem do banner, substitua `src/assets/hero.jpg` por outra imagem com o mesmo nome ou importe um novo arquivo em `src/app/PaginaInicial.tsx`.
 
 As funções `Secao` e `GradeProdutos`, no final do arquivo, evitam repetir a mesma estrutura visual. `Secao` monta o título e o espaçamento de cada bloco. `GradeProdutos` recebe uma lista e cria um `CardProduto` para cada produto.
 
 ### Catálogo
 
-Arquivo: `src/routes/catalogo.tsx`
+Arquivos: `src/app/catalogo/page.tsx` e `src/app/catalogo/CatalogoCliente.tsx`
 
 Endereço: `/catalogo`
 
@@ -124,17 +124,17 @@ A função `atualizarFiltro` altera os parâmetros da URL. A constante `produtos
 
 ### Detalhes do produto
 
-Arquivo: `src/routes/produto.$produtoId.tsx`
+Arquivos: `src/app/produto/[produtoId]/page.tsx` e `ProdutoCliente.tsx`
 
 Endereço: `/produto/identificador-do-produto`
 
-O trecho `$produtoId` significa que a rota é dinâmica. O valor vem do campo `id` cadastrado em `src/data/produtos.ts`. A página busca o produto, apresenta foto, preço, estoque, descrição, variações e informações nutricionais, e permite adicionar o item ao carrinho.
+O trecho `[produtoId]` significa que a rota é dinâmica. O valor vem do campo `id` cadastrado em `src/data/produtos.ts`. A página busca o produto, apresenta foto, preço, estoque, descrição, variações e informações nutricionais, e permite adicionar o item ao carrinho.
 
-Não altere o nome `$produtoId` isoladamente. Ele está ligado à leitura do identificador dentro do arquivo.
+Não altere o nome `[produtoId]` isoladamente. Ele está ligado à leitura do identificador dentro do arquivo.
 
 ### Carrinho
 
-Arquivo: `src/routes/carrinho.tsx`
+Arquivos: `src/app/carrinho/page.tsx` e `src/app/carrinho/CarrinhoCliente.tsx`
 
 Endereço: `/carrinho`
 
@@ -142,7 +142,7 @@ Mostra os produtos escolhidos, permite alterar quantidades, remover itens e gera
 
 ### Sobre a loja
 
-Arquivo: `src/routes/sobre.tsx`
+Arquivo: `src/app/sobre/page.tsx`
 
 Endereço: `/sobre`
 
@@ -262,18 +262,12 @@ Não remova chaves, parênteses, aspas ou tags sem entender a estrutura. Em JSX,
 
 ## Como criar uma página
 
-Crie um arquivo dentro de `src/routes/`. O nome do arquivo define o endereço. Por exemplo, `duvidas.tsx` cria a rota `/duvidas`.
+Crie a pasta `src/app/duvidas/` e, dentro dela, o arquivo `page.tsx`. Essa estrutura cria a rota `/duvidas`.
 
 Estrutura básica:
 
 ```tsx
-import { createFileRoute } from "@tanstack/react-router";
-
-export const Route = createFileRoute("/duvidas")({
-  component: PaginaDuvidas,
-});
-
-function PaginaDuvidas() {
+export default function PaginaDuvidas() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1>Dúvidas frequentes</h1>
@@ -282,7 +276,7 @@ function PaginaDuvidas() {
 }
 ```
 
-Depois, adicione o link no `Header` ou no `Footer`, se a página precisar aparecer na navegação. Inicie ou reinicie `npm run dev` para que a árvore automática de rotas seja atualizada. Não edite manualmente `src/routeTree.gen.ts`, pois ele é gerado pelo roteador.
+Depois, adicione o link no `Header` ou no `Footer`, se a página precisar aparecer na navegação. O Next.js reconhece a nova pasta automaticamente durante `npm run dev`.
 
 ## Teste mínimo por tipo de alteração
 
