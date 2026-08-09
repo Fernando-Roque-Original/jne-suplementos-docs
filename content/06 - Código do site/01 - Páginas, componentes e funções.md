@@ -11,6 +11,8 @@ tags:
 
 Este guia mostra onde cada parte do site está localizada, o que ela faz e como alterá-la. Os caminhos são relativos à pasta do projeto, portanto funcionam em qualquer computador.
 
+Se você ainda não conhece React, TypeScript, arquivos TSX ou a estrutura de um site, comece por [[02 - Curso básico do código|Curso básico do código]].
+
 ## Antes de editar
 
 Abra um terminal na pasta do site e instale as dependências:
