@@ -14,17 +14,15 @@ Este capítulo foi escrito para quem nunca trabalhou com o código de um site. E
 
 ## Qual tecnologia este projeto usa
 
-O site da JNE Suplementos não usa Next.js. Ele usa:
+O site da JNE Suplementos usa:
 
 - **React** para criar a interface em componentes;
 - **TypeScript** para verificar os tipos dos dados e reduzir erros;
 - **TSX** para escrever estrutura visual junto com TypeScript;
-- **TanStack Router** para transformar arquivos em páginas e endereços;
-- **TanStack Start** para montar a aplicação;
-- **Vite** para executar o projeto localmente e gerar a versão de produção;
+- **Next.js** para criar páginas, layouts, metadados, renderização e build;
 - **Tailwind CSS** para aplicar estilos por meio de classes.
 
-Next.js também trabalha com React e arquivos TSX, por isso alguns conceitos parecem iguais. Porém, seus comandos, sua estrutura de pastas e seu sistema de rotas são diferentes. Neste projeto, siga os comandos e caminhos deste manual.
+O Next.js é um framework construído sobre React. React cria os componentes; Next.js organiza páginas, execução no servidor, navegação, imagens, fontes e publicação.
 
 ## O que acontece quando alguém abre o site
 
@@ -85,7 +83,7 @@ HTML define a estrutura de uma página. Ele usa elementos, também chamados de t
 
 **Footer** significa rodapé. Ele fica no final do site e contém informações complementares, contato e navegação. O arquivo é `src/components/Footer.tsx`.
 
-Os dois aparecem em todas as páginas porque são usados na estrutura principal `src/routes/__root.tsx`.
+Os dois aparecem em todas as páginas porque são usados na estrutura principal `src/app/layout.tsx`.
 
 ## O que é CSS
 
@@ -158,8 +156,8 @@ Arquivos `.tsx` contêm TypeScript e também elementos visuais parecidos com HTM
 Exemplos:
 
 - `src/components/Header.tsx`;
-- `src/routes/index.tsx`;
-- `src/routes/carrinho.tsx`.
+- `src/app/PaginaInicial.tsx`;
+- `src/app/carrinho/CarrinhoCliente.tsx`.
 
 O `x` no final indica que o arquivo pode usar JSX:
 
@@ -261,7 +259,7 @@ src/
 ├── data/         produtos, categorias e tipos
 ├── hooks/        comportamentos reutilizáveis do React
 ├── lib/          regras e funções auxiliares
-├── routes/       páginas do site
+├── app/          páginas e layouts do Next.js
 └── styles.css    aparência global
 ```
 
@@ -293,9 +291,9 @@ Guarda Hooks reutilizáveis. Um Hook normalmente começa com `use`, como `useMob
 
 Guarda regras que não são páginas visuais. No projeto, contém carrinho, WhatsApp, formatação e tratamento de erros.
 
-### `src/routes`
+### `src/app`
 
-Guarda as páginas. O nome do arquivo ajuda a definir o endereço no navegador.
+Guarda as páginas e layouts. Cada rota é uma pasta com um arquivo `page.tsx`. O arquivo `layout.tsx` cria a estrutura compartilhada.
 
 ## Imports e o símbolo `@`
 
@@ -335,15 +333,15 @@ Uma rota liga um endereço a uma página.
 
 | Arquivo | Endereço |
 | --- | --- |
-| `src/routes/index.tsx` | `/` |
-| `src/routes/catalogo.tsx` | `/catalogo` |
-| `src/routes/carrinho.tsx` | `/carrinho` |
-| `src/routes/sobre.tsx` | `/sobre` |
-| `src/routes/produto.$produtoId.tsx` | `/produto/algum-id` |
+| `src/app/page.tsx` | `/` |
+| `src/app/catalogo/page.tsx` | `/catalogo` |
+| `src/app/carrinho/page.tsx` | `/carrinho` |
+| `src/app/sobre/page.tsx` | `/sobre` |
+| `src/app/produto/[produtoId]/page.tsx` | `/produto/algum-id` |
 
-`index.tsx` representa a página inicial. O cifrão em `$produtoId` indica uma parte variável do endereço.
+O `page.tsx` colocado diretamente em `src/app` representa a página inicial. Os colchetes em `[produtoId]` indicam uma parte variável do endereço.
 
-O arquivo `src/routes/__root.tsx` é a raiz compartilhada. Ele coloca Header e Footer ao redor da página atual. O `<Outlet />` marca o ponto onde a rota atual aparece.
+O arquivo `src/app/layout.tsx` é a raiz compartilhada. Ele coloca Header e Footer ao redor da página atual. A variável `{children}` marca o ponto onde a rota aparece.
 
 ## Como criar uma página nova
 
@@ -351,18 +349,12 @@ Neste exemplo será criada uma página de dúvidas.
 
 ### 1. Crie o arquivo
 
-Crie `src/routes/duvidas.tsx`.
+Crie a pasta `src/app/duvidas` e o arquivo `src/app/duvidas/page.tsx`.
 
 ### 2. Adicione a rota e o conteúdo
 
 ```tsx
-import { createFileRoute } from "@tanstack/react-router";
-
-export const Route = createFileRoute("/duvidas")({
-  component: PaginaDuvidas,
-});
-
-function PaginaDuvidas() {
+export default function PaginaDuvidas() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1 className="text-4xl font-bold">Dúvidas frequentes</h1>
@@ -391,7 +383,7 @@ npm run check
 npm run build
 ```
 
-Não edite `src/routeTree.gen.ts`. Esse arquivo é atualizado automaticamente pelo sistema de rotas.
+Não é necessário registrar a rota em outro arquivo. A pasta e o `page.tsx` são reconhecidos automaticamente pelo Next.js.
 
 ## Como criar um componente
 
@@ -441,7 +433,7 @@ Execute os comandos dentro da pasta do site.
 | `npm run typecheck` | Verifica somente os tipos do TypeScript |
 | `npm run lint` | Procura problemas de padrão e código |
 | `npm run build` | Gera e valida a versão de produção |
-| `npm run preview` | Exibe localmente o resultado do build |
+| `npm run start` | Executa localmente o build de produção |
 | `npm run format` | Formata os arquivos com Prettier |
 
 Não execute `npm install` em qualquer pasta do computador. Confirme que o terminal está na pasta que contém o `package.json` do site.
@@ -453,7 +445,8 @@ Não execute `npm install` em qualquer pasta do computador. Confirme que o termi
 | `package.json` | Lista dependências e comandos do projeto |
 | `package-lock.json` | Registra as versões exatas instaladas |
 | `tsconfig.json` | Configura o TypeScript e o alias `@` |
-| `vite.config.ts` | Configura Vite, React, rotas e build |
+| `next.config.ts` | Configura o Next.js |
+| `postcss.config.mjs` | Liga Tailwind CSS ao processo de estilos |
 | `eslint.config.js` | Define regras de análise do código |
 | `.gitignore` | Informa ao Git quais arquivos não devem ser enviados |
 
@@ -530,7 +523,7 @@ Confira o nome do arquivo, as letras maiúsculas, a extensão e o caminho depois
 
 ### A rota nova não aparece
 
-Confirme o nome do arquivo, mantenha `npm run dev` ativo e não altere manualmente `routeTree.gen.ts`.
+Confirme se a pasta está dentro de `src/app`, se contém `page.tsx` e se `npm run dev` está ativo.
 
 ### A imagem não aparece
 

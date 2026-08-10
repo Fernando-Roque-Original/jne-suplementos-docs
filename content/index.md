@@ -36,6 +36,10 @@ Registro das principais alterações realizadas no projeto.
 
 Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp.
 
+### [[07 - Evolução para e-commerce]]
+
+Migração para Next.js, comparação com uma operação completa e planejamento de login, banco, checkout, segurança, proteção de dados e documentos fiscais.
+
 ```mermaid
 flowchart LR
   A[Cliente acessa a landing page] --> B[Busca e filtra produtos]
