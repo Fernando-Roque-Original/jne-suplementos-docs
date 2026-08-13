@@ -6,6 +6,16 @@ tags: [changelog]
 
 # Registro de alterações
 
+## 2026-08-12
+
+- perfis nutricionais separados dos dados comerciais;
+- componente reutilizável de tabela nutricional criado;
+- suporte a aminoácidos, ativos e múltiplas doses documentado;
+- oito produtos reais estruturados sem duplicação por sabor;
+- validação de colunas nutricionais adicionada;
+- proposta de gerador interno de produtos registrada;
+- painel administrativo e controle de estoque mantidos como evolução futura.
+
 ## 2026-08-09
 
 - catálogo completo adicionado à landing page;

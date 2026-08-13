@@ -18,7 +18,7 @@ Apresentação do projeto, tecnologias e estrutura do frontend.
 
 ### [[02 - Catálogo]]
 
-Instruções para adicionar imagens, cadastrar produtos, alterar preços e controlar estoque.
+Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais e a proposta de gerador interno.
 
 ### [[03 - Pedido e WhatsApp]]
 
@@ -38,7 +38,7 @@ Mapa das páginas, componentes e funções, com instruções para alterar textos
 
 ### [[07 - Evolução para e-commerce]]
 
-Migração para Next.js, comparação com uma operação completa e planejamento de login, banco, checkout, segurança, proteção de dados e documentos fiscais.
+Migração para Next.js, comparação com uma operação completa e planejamento de login, banco, checkout, segurança, proteção de dados, documentos fiscais, painel de produtos e gestão de estoque.
 
 ```mermaid
 flowchart LR
@@ -50,4 +50,4 @@ flowchart LR
 
 ## Estado do catálogo
 
-Os nomes, marcas e preços atuais são dados de teste. Antes de divulgar a loja, substitua-os pelos dados reais seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]].
+O catálogo está em migração dos dados demonstrativos para produtos reais. Antes de divulgar a loja, confira preços, estoques, imagens e rótulos seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] e [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]].

@@ -1,0 +1,87 @@
+---
+title: Cadastro rápido e perfis nutricionais
+description: Procedimento para cadastrar produtos e rótulos sem repetir componentes ou criar um produto por sabor.
+tags:
+  - catálogo
+  - produtos
+  - nutrição
+  - manutenção
+---
+
+# Cadastro rápido e perfis nutricionais
+
+O cadastro foi reorganizado para diminuir a repetição. Agora existem três responsabilidades separadas:
+
+| Parte | Arquivo | Responsabilidade |
+| --- | --- | --- |
+| Dados comerciais | `src/data/produtos.ts` | nome, preço, imagem, estoque, categoria e sabores |
+| Dados do rótulo | `src/data/perfis-nutricionais.ts` | porção, nutrientes, ingredientes e observações |
+| Apresentação | `src/components/InformacaoNutricional.tsx` | transforma qualquer perfil em tabela responsiva |
+
+> [!important]
+> O perfil pertence ao produto, não ao sabor. Chocolate, morango e outros sabores continuam sendo variações do mesmo cadastro e usam a mesma tabela fornecida.
+
+## O que melhorou
+
+- não é mais necessário escrever HTML para cada rótulo;
+- tabelas simples e tabelas com várias doses usam o mesmo formato;
+- um produto pode ter uma tabela nutricional e outra de aminoácidos ou ativos;
+- ingredientes e observações são campos opcionais;
+- o build detecta linhas com quantidade incorreta de valores;
+- tabelas extensas recebem rolagem interna no celular;
+- URLs antigas dos produtos continuam redirecionando para o cadastro atual.
+
+## Exemplo de perfil
+
+```ts
+export const perfilExemplo: InformacaoNutricional = {
+  porcao: "30 g (1 dosador)",
+  porcoesPorEmbalagem: "30",
+  tabelas: [
+    {
+      titulo: "Informação Nutricional",
+      colunas: ["Quantidade por porção", "%VD"],
+      linhas: [
+        { nome: "Proteínas", valores: ["20 g", "40%"] },
+        { nome: "Carboidratos", valores: ["4 g", "1%"] },
+      ],
+    },
+  ],
+  ingredientes: "Texto conferido no rótulo.",
+  observacoes: ["Não contém glúten."],
+};
+```
+
+Cada linha precisa ter um valor para cada coluna. Se a tabela tem duas colunas, `valores` também precisa ter dois itens.
+
+> [!warning] Dados do rótulo
+> Não calcule, arredonde ou complete valores ausentes. Não invente `%VD`. Mantenha a unidade exatamente como foi conferida no rótulo.
+
+## Fluxo atual para adicionar um produto
+
+1. Coloque a fotografia em `src/assets/produtos/`.
+2. Importe a imagem em `src/data/produtos.ts`.
+3. Cadastre os dados comerciais e os sabores.
+4. Crie o perfil em `src/data/perfis-nutricionais.ts`.
+5. Ligue o produto ao perfil com `infoNutricional`.
+6. Execute `npm run check` e `npm run build`.
+7. Confira a página em desktop e celular.
+
+## Como reduzir ainda mais o trabalho
+
+Para poucos produtos, os arquivos estruturados são suficientes. Para dezenas ou centenas de produtos, o próximo passo recomendado é um gerador interno:
+
+```mermaid
+flowchart LR
+  A[Formulário ou planilha] --> B[Validação]
+  B --> C[Pré-visualização]
+  C --> D[Arquivos estruturados]
+  D --> E[Revisão humana]
+  E --> F[Git e publicação]
+```
+
+O gerador pode receber uma planilha com abas para produtos, sabores e nutrientes. Ele deve bloquear IDs repetidos, campos obrigatórios ausentes, números de colunas incorretos e valores sem unidade.
+
+Essa ferramenta pode funcionar apenas no computador da equipe e gerar arquivos para revisão. Assim, não exige banco, login ou um painel público nesta fase.
+
+Consulte [[07 - Evolução para e-commerce/03 - Painel de produtos e estoque|Painel de produtos e estoque]] para a evolução futura.

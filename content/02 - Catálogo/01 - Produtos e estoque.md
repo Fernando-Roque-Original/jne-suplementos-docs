@@ -13,6 +13,10 @@ Todos os caminhos desta página são relativos à pasta principal do repositóri
 
 **Nomes, preços, categorias e estoque:** `src/data/produtos.ts`
 
+**Perfis dos rótulos:** `src/data/perfis-nutricionais.ts`
+
+**Componente das tabelas:** `src/components/InformacaoNutricional.tsx`
+
 ## 1. Adicionar imagens
 
 Copie a foto para:
@@ -103,6 +107,7 @@ Adicione o produto dentro da lista `produtos`:
 - `hipercaloricos`
 - `vitaminas-minerais`
 - `aminoacidos`
+- `termogenicos`
 - `outros`
 
 ## 5. Produtos com sabores
@@ -115,6 +120,20 @@ variacoes: [
 ```
 
 Quando existem variações, o carrinho usa o estoque de cada sabor.
+
+Quando a loja ainda não conferiu o estoque separado por sabor, omita `estoque` nas variações. O site usará o estoque total do produto. Não distribua o total por estimativa.
+
+## 6. Informações nutricionais
+
+O cadastro comercial e o perfil do rótulo ficam separados. O produto apenas aponta para um perfil:
+
+```ts
+infoNutricional: perfilNutraWhey,
+```
+
+As tabelas, ingredientes e observações ficam em `src/data/perfis-nutricionais.ts`. Um único componente exibe todos os formatos, inclusive múltiplas porções, perfil de aminoácidos e ativos por cápsula.
+
+Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo.
 
 ## Checklist
 
