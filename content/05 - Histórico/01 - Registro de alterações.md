@@ -8,7 +8,7 @@ tags: [changelog]
 
 ## 2026-08-21
 
-- catálogo ampliado de 15 para 26 produtos ativos a partir das fotos enviadas pela loja;
+- catálogo ampliado de 15 para 25 produtos ativos a partir das fotos enviadas pela loja;
 - onze produtos cadastrados com imagem, descrição e tabela ou componentes do rótulo;
 - fotos oficiais da Nutra Gold aplicadas ao UCII, Coenzima Q10, Ômega 3, Hair Bomb e Nutra Energy;
 - fotos da loja normalizadas em 1200 por 1200 pixels e convertidas para WebP para manter o catálogo uniforme;
@@ -31,6 +31,13 @@ tags: [changelog]
 - README reorganizado com fluxo do pedido, estrutura, manutenção e limites atuais;
 - estado dos produtos reais e demonstrativos esclarecido;
 - documentação do Quartz alinhada com a versão atual do catálogo.
+- checkup dos 25 itens publicado com imagem, dados comerciais, rótulo e próxima ação;
+- ingredientes oficiais da Creatina Absolut, Termogênico Brutal e Multivitamínico Nyer acrescentados;
+- ingredientes legíveis de Magnésio & Inositol, Coenzima Q10 e Nutra Energy acrescentados;
+- descrição do Whey Nutra Gold corrigida para não aplicar uma tabela a sabores ainda não conferidos;
+- validação automática de IDs, preços, estoques e soma das variações criada;
+- aliases antigos corrigidos para não redirecionar a produtos diferentes;
+- controles móveis, foco de teclado, menu, grade e textos comerciais revisados.
 
 ## 2026-08-12
 

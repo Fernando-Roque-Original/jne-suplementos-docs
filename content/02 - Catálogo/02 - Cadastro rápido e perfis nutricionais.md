@@ -12,11 +12,11 @@ tags:
 
 O cadastro foi reorganizado para diminuir a repetição. Agora existem três responsabilidades separadas:
 
-| Parte | Arquivo | Responsabilidade |
-| --- | --- | --- |
-| Dados comerciais | `src/data/produtos.ts` | nome, preço, imagem, estoque, categoria e sabores |
-| Dados do rótulo | `src/data/perfis-nutricionais.ts` | porção, nutrientes, ingredientes e observações |
-| Apresentação | `src/components/InformacaoNutricional.tsx` | transforma qualquer perfil em tabela responsiva |
+| Parte            | Arquivo                                    | Responsabilidade                                  |
+| ---------------- | ------------------------------------------ | ------------------------------------------------- |
+| Dados comerciais | `src/data/produtos.ts`                     | nome, preço, imagem, estoque, categoria e sabores |
+| Dados do rótulo  | `src/data/perfis-nutricionais.ts`          | porção, nutrientes, ingredientes e observações    |
+| Apresentação     | `src/components/InformacaoNutricional.tsx` | transforma qualquer perfil em tabela responsiva   |
 
 > [!important]
 > Use um perfil geral somente quando todos os sabores tiverem o mesmo rótulo. Quando valores, ingredientes ou alertas mudarem, associe `imagem` e `infoNutricional` à variação correspondente.
@@ -50,7 +50,7 @@ export const perfilExemplo: InformacaoNutricional = {
   ],
   ingredientes: "Texto conferido no rótulo.",
   observacoes: ["Não contém glúten."],
-};
+}
 ```
 
 Cada linha precisa ter um valor para cada coluna. Se a tabela tem duas colunas, `valores` também precisa ter dois itens.

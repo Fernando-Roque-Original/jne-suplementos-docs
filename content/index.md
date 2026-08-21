@@ -18,7 +18,7 @@ Apresentação do projeto, tecnologias e estrutura do frontend.
 
 ### [[02 - Catálogo]]
 
-Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais e a proposta de gerador interno.
+Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
 
 ### [[03 - Pedido e WhatsApp]]
 
@@ -50,4 +50,4 @@ flowchart LR
 
 ## Estado do catálogo
 
-O catálogo possui 25 produtos ativos. Produtos sem preço local confirmado aparecem como `Sob consulta`; fotos genéricas são identificadas como `Imagem de referência`. BCAA e glutamina demonstrativos foram desativados. Ioimbina, Tribullus Gold e Diamond estão registrados, mas fora da vitrine até a regularização sanitária ser comprovada. Antes de divulgar a loja, confira [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]], [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]] e [[02 - Catálogo/03 - Fontes e pendências do catálogo|Fontes e pendências do catálogo]].
+O catálogo possui 25 produtos ativos. Produtos sem preço local confirmado aparecem como `Sob consulta`; fotos genéricas são identificadas como `Imagem de referência`. BCAA e glutamina demonstrativos foram desativados. Ioimbina, Tribullus Gold e Diamond estão registrados, mas fora da vitrine até a regularização sanitária ser comprovada. Antes de divulgar a loja, confira [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]], [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]], [[02 - Catálogo/03 - Fontes e pendências do catálogo|Fontes e pendências do catálogo]] e [[02 - Catálogo/04 - Checkup do catálogo|Checkup do catálogo]].

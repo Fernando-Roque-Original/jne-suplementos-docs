@@ -64,27 +64,27 @@ Quando houver banco de dados e operação diária de estoque, o painel poderá i
 
 ## Estados recomendados
 
-| Estado | Significado |
-| --- | --- |
-| Rascunho | Cadastro incompleto e invisível no catálogo |
-| Em revisão | Dados e rótulo aguardando conferência |
-| Publicado | Produto disponível para o cliente |
-| Pausado | Temporariamente indisponível |
-| Arquivado | Mantido no histórico, mas fora da operação |
+| Estado     | Significado                                 |
+| ---------- | ------------------------------------------- |
+| Rascunho   | Cadastro incompleto e invisível no catálogo |
+| Em revisão | Dados e rótulo aguardando conferência       |
+| Publicado  | Produto disponível para o cliente           |
+| Pausado    | Temporariamente indisponível                |
+| Arquivado  | Mantido no histórico, mas fora da operação  |
 
 ## Controle de estoque
 
 Um sistema futuro não deve guardar apenas um número atual. Ele deve registrar movimentações:
 
-| Movimento | Exemplo |
-| --- | --- |
-| Entrada | compra recebida do fornecedor |
-| Reserva | item separado para um pedido |
-| Saída | venda confirmada |
+| Movimento    | Exemplo                         |
+| ------------ | ------------------------------- |
+| Entrada      | compra recebida do fornecedor   |
+| Reserva      | item separado para um pedido    |
+| Saída        | venda confirmada                |
 | Cancelamento | devolução da reserva ao estoque |
-| Ajuste | correção após contagem física |
-| Perda | avaria ou vencimento |
-| Devolução | produto retornado e avaliado |
+| Ajuste       | correção após contagem física   |
+| Perda        | avaria ou vencimento            |
+| Devolução    | produto retornado e avaliado    |
 
 O saldo é consequência dessas movimentações. Isso permite descobrir por que o estoque mudou.
 

@@ -187,3 +187,5 @@ Troque os itens de teste por produtos reais e confirme a autorização de uso da
 O catálogo possui 25 produtos ativos. BCAA e glutamina demonstrativos foram desativados. Fotos oficiais por sabor foram adicionadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os novos itens Nutra Gold usam fotos oficiais; os produtos sem imagem pública confiável usam as fotos da loja normalizadas em WebP. Acessórios usam fotografias identificadas como referência.
 
 Os produtos sem preço local confirmado usam `sobConsulta: true`. Consulte [[03 - Fontes e pendências do catálogo]] antes da divulgação comercial.
+
+O arquivo executa uma validação automática durante o desenvolvimento e o build. Ela interrompe a execução quando encontra ID repetido, preço ou estoque inválido ou quando o estoque total não corresponde à soma das variações. Consulte [[04 - Checkup do catálogo]] para a situação de cada item.

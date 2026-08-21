@@ -32,17 +32,17 @@ Esses recursos não implementam o futuro automaticamente. Eles reduzem a quantid
 
 ## O que mudou
 
-| Antes | Agora |
-| --- | --- |
-| `src/routes/index.tsx` | `src/app/page.tsx` e `PaginaInicial.tsx` |
-| `src/routes/__root.tsx` | `src/app/layout.tsx` |
-| `produto.$produtoId.tsx` | `produto/[produtoId]/page.tsx` |
-| TanStack Link e Router | `next/link` e `next/navigation` |
-| configuração `head` nas rotas | `Metadata` e `generateMetadata` |
-| imagem HTML comum | `next/image` |
-| fonte externa no documento | `next/font` |
-| Vite e Nitro | `next dev`, `next build` e `next start` |
-| plugin Tailwind do Vite | PostCSS do Next.js |
+| Antes                         | Agora                                    |
+| ----------------------------- | ---------------------------------------- |
+| `src/routes/index.tsx`        | `src/app/page.tsx` e `PaginaInicial.tsx` |
+| `src/routes/__root.tsx`       | `src/app/layout.tsx`                     |
+| `produto.$produtoId.tsx`      | `produto/[produtoId]/page.tsx`           |
+| TanStack Link e Router        | `next/link` e `next/navigation`          |
+| configuração `head` nas rotas | `Metadata` e `generateMetadata`          |
+| imagem HTML comum             | `next/image`                             |
+| fonte externa no documento    | `next/font`                              |
+| Vite e Nitro                  | `next dev`, `next build` e `next start`  |
+| plugin Tailwind do Vite       | PostCSS do Next.js                       |
 
 ## Estrutura atual
 
@@ -117,7 +117,7 @@ Conteúdo básico:
 
 ```tsx
 export default function PaginaDuvidas() {
-  return <h1>Dúvidas frequentes</h1>;
+  return <h1>Dúvidas frequentes</h1>
 }
 ```
 

@@ -40,15 +40,15 @@ O primeiro comando verifica TypeScript e regras do código. O segundo confirma q
 
 ## Mapa das pastas
 
-| Caminho | Responsabilidade |
-| --- | --- |
-| `src/app/` | Páginas, layouts e endereços do Next.js |
+| Caminho           | Responsabilidade                                              |
+| ----------------- | ------------------------------------------------------------- |
+| `src/app/`        | Páginas, layouts e endereços do Next.js                       |
 | `src/components/` | Partes reutilizáveis, como Header, Footer e cartão de produto |
-| `src/data/` | Produtos, categorias e tipos dos dados |
-| `src/config/` | Dados gerais da loja |
-| `src/lib/` | Regras do carrinho, WhatsApp e formatação |
-| `src/assets/` | Imagens do banner e dos produtos |
-| `src/styles.css` | Cores, fontes e estilos globais |
+| `src/data/`       | Produtos, categorias e tipos dos dados                        |
+| `src/config/`     | Dados gerais da loja                                          |
+| `src/lib/`        | Regras do carrinho, WhatsApp e formatação                     |
+| `src/assets/`     | Imagens do banner e dos produtos                              |
+| `src/styles.css`  | Cores, fontes e estilos globais                               |
 
 ## Estrutura comum de todas as páginas
 
@@ -272,7 +272,7 @@ export default function PaginaDuvidas() {
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1>Dúvidas frequentes</h1>
     </div>
-  );
+  )
 }
 ```
 
@@ -280,15 +280,15 @@ Depois, adicione o link no `Header` ou no `Footer`, se a página precisar aparec
 
 ## Teste mínimo por tipo de alteração
 
-| Alteração | O que conferir |
-| --- | --- |
-| Header ou Footer | Todos os links e visualização no celular |
-| Página inicial | Banner, seções, busca e produtos em destaque |
-| Produto | Card, detalhes, variação, estoque e preço |
-| Carrinho | Adicionar, alterar quantidade, remover e recarregar a página |
-| WhatsApp | Número correto e resumo completo da compra |
-| Estilos | Contraste, leitura e comportamento em telas pequenas |
-| Nova página | URL, Header, Footer, título e build de produção |
+| Alteração        | O que conferir                                               |
+| ---------------- | ------------------------------------------------------------ |
+| Header ou Footer | Todos os links e visualização no celular                     |
+| Página inicial   | Banner, seções, busca e produtos em destaque                 |
+| Produto          | Card, detalhes, variação, estoque e preço                    |
+| Carrinho         | Adicionar, alterar quantidade, remover e recarregar a página |
+| WhatsApp         | Número correto e resumo completo da compra                   |
+| Estilos          | Contraste, leitura e comportamento em telas pequenas         |
+| Nova página      | URL, Header, Footer, título e build de produção              |
 
 ## Publicação das alterações
 

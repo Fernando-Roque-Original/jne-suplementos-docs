@@ -14,23 +14,23 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 
 ## Produtos com fonte oficial
 
-| Produto                        | Fonte                                                                                                                          | Dados usados                           |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------- |
-| Hydro Protein Nyer 820 g       | [Nyer Nutrition](https://nyersuplementos.com/products/products-hydro-protein-whey-albumina-820g)                               | foto, sabores e conferência do produto |
-| Whey Protein Gourmet Nyer 1 kg | [Nyer Nutrition](https://nyersuplementos.com/products/whey-protein-nyer-pote-gourmet-1-kg)                                     | foto, sabores e tabela nutricional     |
-| Beef Protein Nyer 900 g        | [Nyer Nutrition](https://nyersuplementos.com/products/nyer-beef-zero-lactose-900g)                                             | foto, sabores e tabela nutricional     |
-| Creatina Nyer 300 g            | [Nyer Nutrition](https://nyersuplementos.com/products/creatina-monohidratada-300-g-nyer)                                       | foto e apresentação                    |
-| Dark Pump Nyer 300 g           | [Nyer Nutrition](https://nyersuplementos.com/products/pre-treino-dark-pump-300g-nyer-nutrition-2)                              | foto e sabores                         |
-| Multivitamínico Nyer           | [Nyer Nutrition](https://nyersuplementos.com/products/multi-vitaminico-nyer-nutrition)                                         | foto e apresentação                    |
-| Termogênico Brutal             | [Nyer Nutrition](https://nyersuplementos.com/products/termogenicobrutal)                                                       | foto e apresentação                    |
-| Creatina Absolut 300 g         | [Absolut Nutrition](https://www.absolutnutrition.com.br/produtos/creatina-100-pure-de-100g-150g-300g-absolut-nutrition-1umbw/) | foto da linha e conferência do produto |
-| Gummy Hair 180 g               | [Gummy Original](https://gummy.com.br/products/gummy-hair%C2%AE-tutti-frutti-180-g)                                            | foto, sabores e tabela nutricional     |
-| Whey Nutra Gold 3W 900 g       | [Nutra Gold](https://nutragold.com.br/produtos/)                                                                                | fotos separadas dos seis sabores       |
-| UCII Colágeno + Ácido Hialurônico | [Nutra Gold](https://nutragold.com.br/produtos/colageno-ucii-com-acido-hialuronico-60-capsulas/)                              | foto oficial e conferência da composição |
-| Coenzima Q10 Nutra Gold        | [Nutra Gold](https://nutragold.com.br/produtos/coenzima-q10/)                                                                  | foto oficial e conferência do produto  |
-| Ômega 3 Nutra Gold             | [Nutra Gold](https://nutragold.com.br/produtos/omega-3/)                                                                       | foto oficial e conferência do produto  |
-| Hair Bomb Nutra Gold           | [Nutra Gold](https://nutragold.com.br/produtos/hair-bomb-cabelo-pele-e-unhas/)                                                 | foto oficial e conferência do produto  |
-| Nutra Energy                   | [Nutra Gold](https://nutragold.com.br/produtos/nutra-energy/)                                                                  | foto oficial e conferência do produto  |
+| Produto                           | Fonte                                                                                                         | Dados usados                             |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Hydro Protein Nyer 820 g          | [Nyer Nutrition](https://nyersuplementos.com/products/products-hydro-protein-whey-albumina-820g)              | foto, sabores e conferência do produto   |
+| Whey Protein Gourmet Nyer 1 kg    | [Nyer Nutrition](https://nyersuplementos.com/products/whey-protein-nyer-pote-gourmet-1-kg)                    | foto, sabores e tabela nutricional       |
+| Beef Protein Nyer 900 g           | [Nyer Nutrition](https://nyersuplementos.com/products/nyer-beef-zero-lactose-900g)                            | foto, sabores e tabela nutricional       |
+| Creatina Nyer 300 g               | [Nyer Nutrition](https://nyersuplementos.com/products/creatina-monohidratada-300-g-nyer)                      | foto e apresentação                      |
+| Dark Pump Nyer 300 g              | [Nyer Nutrition](https://nyersuplementos.com/products/pre-treino-dark-pump-300g-nyer-nutrition-2)             | foto e sabores                           |
+| Multivitamínico Nyer              | [Nyer Nutrition](https://nyersuplementos.com/products/multi-vitaminico-nyer-nutrition)                        | foto, tabela, ingredientes e alergênico  |
+| Termogênico Brutal                | [Nyer Nutrition](https://nyersuplementos.com/products/termogenicobrutal)                                      | foto, ativos e ingredientes              |
+| Creatina Absolut 300 g            | [Absolut Nutrition](https://www.absolutnutrition.com.br/wp-content/uploads/2024/04/LAUDO-CREATINA-NOV.23.pdf) | foto da linha, composição e laudo        |
+| Gummy Hair 180 g                  | [Gummy Original](https://gummy.com.br/products/gummy-hair%C2%AE-tutti-frutti-180-g)                           | foto, sabores e tabela nutricional       |
+| Whey Nutra Gold 3W 900 g          | [Nutra Gold](https://nutragold.com.br/produtos/)                                                              | fotos separadas dos seis sabores         |
+| UCII Colágeno + Ácido Hialurônico | [Nutra Gold](https://nutragold.com.br/produtos/colageno-ucii-com-acido-hialuronico-60-capsulas/)              | foto oficial e conferência da composição |
+| Coenzima Q10 Nutra Gold           | [Nutra Gold](https://nutragold.com.br/produtos/coenzima-q10/)                                                 | foto oficial e conferência do produto    |
+| Ômega 3 Nutra Gold                | [Nutra Gold](https://nutragold.com.br/produtos/omega-3/)                                                      | foto oficial e conferência do produto    |
+| Hair Bomb Nutra Gold              | [Nutra Gold](https://nutragold.com.br/produtos/hair-bomb-cabelo-pele-e-unhas/)                                | foto oficial e conferência do produto    |
+| Nutra Energy                      | [Nutra Gold](https://nutragold.com.br/produtos/nutra-energy/)                                                 | foto oficial e conferência do produto    |
 
 > [!important]
 > Preços encontrados nessas páginas não são preços da JNE. O item fica `sobConsulta: true` até a loja informar o valor e o estoque locais.
@@ -39,14 +39,14 @@ As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, 
 
 ## Auditoria por sabor
 
-| Produto | Situação da tabela | Situação dos ingredientes |
-| --- | --- | --- |
-| Hydro Protein Nyer | Os quatro rótulos oficiais apresentam os mesmos valores. | Perfil separado por sabor; Chocolate Maltado contém glúten e os demais não. |
-| Whey Gourmet Nyer | O fabricante publica uma tabela para a linha. | Fórmula-base publicada para a linha; o aromatizante muda conforme o sabor. |
-| Beef Protein Nyer | A tabela oficial informa 32 g de proteína por porção. | Fórmula-base publicada para as duas opções; aroma e corante variam. |
-| Dark Pump Nyer | Perfil compartilhado conforme o rótulo oficial da linha. | Aroma e corante variam conforme o sabor; a base foi registrada no perfil. |
-| Gummy Hair Sabores | Perfil da linha Sabores, sem misturar com Gummy Hair Zero. | Lista oficial da linha Sabores registrada no perfil. |
-| Whey Nutra Gold 3W | Torta de Limão está transcrito; Chocolate, Leitinho, Morango, Doce de leite e Açaí aguardam foto legível do verso. | A composição-base foi conferida nas páginas oficiais dos seis sabores. |
+| Produto            | Situação da tabela                                                                                                 | Situação dos ingredientes                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| Hydro Protein Nyer | Os quatro rótulos oficiais apresentam os mesmos valores.                                                           | Perfil separado por sabor; Chocolate Maltado contém glúten e os demais não. |
+| Whey Gourmet Nyer  | O fabricante publica uma tabela para a linha.                                                                      | Fórmula-base publicada para a linha; o aromatizante muda conforme o sabor.  |
+| Beef Protein Nyer  | A tabela oficial informa 32 g de proteína por porção.                                                              | Fórmula-base publicada para as duas opções; aroma e corante variam.         |
+| Dark Pump Nyer     | Perfil compartilhado conforme o rótulo oficial da linha.                                                           | Aroma e corante variam conforme o sabor; a base foi registrada no perfil.   |
+| Gummy Hair Sabores | Perfil da linha Sabores, sem misturar com Gummy Hair Zero.                                                         | Lista oficial da linha Sabores registrada no perfil.                        |
+| Whey Nutra Gold 3W | Torta de Limão está transcrito; Chocolate, Leitinho, Morango, Doce de leite e Açaí aguardam foto legível do verso. | A composição-base foi conferida nas páginas oficiais dos seis sabores.      |
 
 > [!warning] Whey Nutra Gold 3W
 > Os valores do sabor Torta de Limão não são mais exibidos como se servissem para todos os sabores. Nos outros cinco sabores, o site mostra ingredientes e a pendência da tabela até a loja fornecer uma foto legível do verso de cada embalagem.
@@ -70,11 +70,11 @@ As tabelas desses produtos foram transcritas somente quando o valor estava legí
 
 Os itens abaixo estão registrados no código com `ativo: false`, portanto não aparecem no catálogo e não podem ser enviados pelo carrinho:
 
-| Produto | Motivo do bloqueio |
-| --- | --- |
-| Ioimbina & Long Jack Shadow | A loja precisa comprovar a regularização sanitária para venda como suplemento alimentar. |
+| Produto                     | Motivo do bloqueio                                                                                                          |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Ioimbina & Long Jack Shadow | A loja precisa comprovar a regularização sanitária para venda como suplemento alimentar.                                    |
 | Tribullus Gold Taurus Pharm | O rótulo fotografado declara tadalafila. A Anvisa alerta que a comercialização dessa substância em suplementos é irregular. |
-| Diamond New Green | Falta foto completa do verso, composição, fabricante e comprovação de regularização. |
+| Diamond New Green           | Falta foto completa do verso, composição, fabricante e comprovação de regularização.                                        |
 
 Referências sanitárias: [orientações da Anvisa para suplementos](https://www.gov.br/anvisa/pt-br/assuntos/alimentos/suplementos-alimentares), [consulta de produtos irregulares](https://www.gov.br/anvisa/pt-br/assuntos/alimentos/suplementos-alimentares/consulte-produtos-irregulares) e [alerta sobre tadalafila em suplementos](https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-emite-alerta-sobre-uso-indiscriminado-de-medicamentos-para-disfuncao-eretil).
 
@@ -93,6 +93,8 @@ O aviso `Imagem de referência` permanece visível enquanto o modelo real não f
 - garrafa inox: capacidade, cor, modelo, preço e estoque;
 - coqueteleiras: modelo, cor, material, preço e estoque;
 - itens `sobConsulta`: preço e estoque da JNE.
+
+O resultado completo da revisão está em [[04 - Checkup do catálogo]].
 
 ## Procedimento de conferência
 
