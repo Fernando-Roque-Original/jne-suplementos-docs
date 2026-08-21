@@ -184,6 +184,6 @@ Troque os itens de teste por produtos reais e confirme a autorização de uso da
 
 ## Estado atual do catálogo
 
-O catálogo possui 15 produtos ativos. BCAA e glutamina demonstrativos foram desativados. Fotos oficiais por sabor foram adicionadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair; acessórios usam fotografias identificadas como referência.
+O catálogo possui 25 produtos ativos. BCAA e glutamina demonstrativos foram desativados. Fotos oficiais por sabor foram adicionadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os novos itens Nutra Gold usam fotos oficiais; os produtos sem imagem pública confiável usam as fotos da loja normalizadas em WebP. Acessórios usam fotografias identificadas como referência.
 
 Os produtos sem preço local confirmado usam `sobConsulta: true`. Consulte [[03 - Fontes e pendências do catálogo]] antes da divulgação comercial.

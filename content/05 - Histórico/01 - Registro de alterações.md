@@ -8,11 +8,17 @@ tags: [changelog]
 
 ## 2026-08-21
 
+- catálogo ampliado de 15 para 26 produtos ativos a partir das fotos enviadas pela loja;
+- onze produtos cadastrados com imagem, descrição e tabela ou componentes do rótulo;
+- fotos oficiais da Nutra Gold aplicadas ao UCII, Coenzima Q10, Ômega 3, Hair Bomb e Nutra Energy;
+- fotos da loja normalizadas em 1200 por 1200 pixels e convertidas para WebP para manter o catálogo uniforme;
+- Ioimbina, Tribullus Gold e Diamond registrados como inativos até a comprovação da regularização sanitária;
+- fontes oficiais, dados ilegíveis e decisões de bloqueio documentados no Quartz;
 - fotos oficiais em alta resolução vinculadas aos sabores do Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair;
 - página de produto atualizada para trocar embalagem e informação nutricional ao selecionar o sabor;
 - ingredientes e declaração de glúten do Hydro separados conforme cada rótulo oficial;
 - manual de cadastro atualizado para explicar imagens e perfis nutricionais por variação;
-- catálogo ampliado para 15 produtos ativos;
+- etapa anterior do catálogo consolidada com 15 produtos ativos;
 - Whey Gourmet Nyer, Beef Protein Nyer e Gummy Hair adicionados com tabelas estruturadas;
 - fotos oficiais adicionadas aos produtos Nyer, Gummy Hair e à linha de creatina Absolut;
 - garrafa e coqueteleiras cadastradas com fotos licenciadas e aviso de imagem de referência;

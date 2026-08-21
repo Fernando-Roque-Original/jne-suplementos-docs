@@ -26,13 +26,41 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 | Creatina Absolut 300 g         | [Absolut Nutrition](https://www.absolutnutrition.com.br/produtos/creatina-100-pure-de-100g-150g-300g-absolut-nutrition-1umbw/) | foto da linha e conferência do produto |
 | Gummy Hair 180 g               | [Gummy Original](https://gummy.com.br/products/gummy-hair%C2%AE-tutti-frutti-180-g)                                            | foto, sabores e tabela nutricional     |
 | Whey Nutra Gold 3W 900 g       | [Nutra Gold](https://nutragold.com.br/produtos/)                                                                                | fotos separadas dos seis sabores       |
+| UCII Colágeno + Ácido Hialurônico | [Nutra Gold](https://nutragold.com.br/produtos/colageno-ucii-com-acido-hialuronico-60-capsulas/)                              | foto oficial e conferência da composição |
+| Coenzima Q10 Nutra Gold        | [Nutra Gold](https://nutragold.com.br/produtos/coenzima-q10/)                                                                  | foto oficial e conferência do produto  |
+| Ômega 3 Nutra Gold             | [Nutra Gold](https://nutragold.com.br/produtos/omega-3/)                                                                       | foto oficial e conferência do produto  |
+| Hair Bomb Nutra Gold           | [Nutra Gold](https://nutragold.com.br/produtos/hair-bomb-cabelo-pele-e-unhas/)                                                 | foto oficial e conferência do produto  |
+| Nutra Energy                   | [Nutra Gold](https://nutragold.com.br/produtos/nutra-energy/)                                                                  | foto oficial e conferência do produto  |
 
 > [!important]
 > Preços encontrados nessas páginas não são preços da JNE. O item fica `sobConsulta: true` até a loja informar o valor e o estoque locais.
 
 As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os quatro rótulos do Hydro usam a mesma tabela numérica; ingredientes e declaração de glúten foram cadastrados separadamente.
 
-As fotos enviadas pela loja em 19 de agosto de 2026 serviram para identificar produtos e conferir rótulos. Elas não foram usadas como imagem principal porque possuem fundo de loja, variação de luz e enquadramento inconsistente.
+As fotos enviadas pela loja em 19 de agosto de 2026 foram usadas para identificar produtos, transcrever os rótulos e cadastrar as marcas que não possuem uma foto oficial confiável na internet. Antes de entrarem no projeto, as fotos frontais foram giradas automaticamente, enquadradas em fundo branco, reduzidas para 1200 por 1200 pixels e convertidas para WebP. Esse tratamento mantém todos os cards do catálogo no mesmo tamanho sem substituir o rótulo real por uma imagem parecida.
+
+## Produtos cadastrados a partir das fotos da loja
+
+- Cabelo, Pele & Unha, da Nutrientes Sports;
+- L-Carnitina 2000 com CoQ-10, da Nutrientes Sports;
+- Beta-Alanina, da Bluebooster Sports Nutrition;
+- Magnésio & Inositol, da Bluebooster Sports Nutrition;
+- Super Abdomen, da Nutrientes Sports;
+- Treonato de Magnésio, da Nutra Gold.
+
+As tabelas desses produtos foram transcritas somente quando o valor estava legível. O campo de cromo do Super Abdomen permanece marcado para conferência, pois a quantidade não aparece com nitidez suficiente na foto.
+
+## Itens bloqueados para publicação
+
+Os itens abaixo estão registrados no código com `ativo: false`, portanto não aparecem no catálogo e não podem ser enviados pelo carrinho:
+
+| Produto | Motivo do bloqueio |
+| --- | --- |
+| Ioimbina & Long Jack Shadow | A loja precisa comprovar a regularização sanitária para venda como suplemento alimentar. |
+| Tribullus Gold Taurus Pharm | O rótulo fotografado declara tadalafila. A Anvisa alerta que a comercialização dessa substância em suplementos é irregular. |
+| Diamond New Green | Falta foto completa do verso, composição, fabricante e comprovação de regularização. |
+
+Referências sanitárias: [orientações da Anvisa para suplementos](https://www.gov.br/anvisa/pt-br/assuntos/alimentos/suplementos-alimentares), [consulta de produtos irregulares](https://www.gov.br/anvisa/pt-br/assuntos/alimentos/suplementos-alimentares/consulte-produtos-irregulares) e [alerta sobre tadalafila em suplementos](https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/anvisa-emite-alerta-sobre-uso-indiscriminado-de-medicamentos-para-disfuncao-eretil).
 
 ## Fotos de referência
 
@@ -44,7 +72,8 @@ O aviso `Imagem de referência` permanece visível enquanto o modelo real não f
 ## Informações pendentes
 
 - Maniac Black: foto oficial da versão vendida;
-- Tribullus Gold 2000 mg: marca, quantidade de cápsulas, foto frontal e rótulo;
+- Super Abdomen: nova foto nítida da tabela para confirmar a quantidade de cromo;
+- Ioimbina, Tribullus Gold e Diamond: documentação sanitária descrita na seção anterior;
 - garrafa inox: capacidade, cor, modelo, preço e estoque;
 - coqueteleiras: modelo, cor, material, preço e estoque;
 - itens `sobConsulta`: preço e estoque da JNE.
