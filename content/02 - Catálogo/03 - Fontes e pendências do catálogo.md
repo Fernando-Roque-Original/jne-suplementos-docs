@@ -37,6 +37,22 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 
 As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os quatro rótulos do Hydro usam a mesma tabela numérica; ingredientes e declaração de glúten foram cadastrados separadamente.
 
+## Auditoria por sabor
+
+| Produto | Situação da tabela | Situação dos ingredientes |
+| --- | --- | --- |
+| Hydro Protein Nyer | Os quatro rótulos oficiais apresentam os mesmos valores. | Perfil separado por sabor; Chocolate Maltado contém glúten e os demais não. |
+| Whey Gourmet Nyer | O fabricante publica uma tabela para a linha. | Fórmula-base publicada para a linha; o aromatizante muda conforme o sabor. |
+| Beef Protein Nyer | A tabela oficial informa 32 g de proteína por porção. | Fórmula-base publicada para as duas opções; aroma e corante variam. |
+| Dark Pump Nyer | Perfil compartilhado conforme o rótulo oficial da linha. | Aroma e corante variam conforme o sabor; a base foi registrada no perfil. |
+| Gummy Hair Sabores | Perfil da linha Sabores, sem misturar com Gummy Hair Zero. | Lista oficial da linha Sabores registrada no perfil. |
+| Whey Nutra Gold 3W | Torta de Limão está transcrito; Chocolate, Leitinho, Morango, Doce de leite e Açaí aguardam foto legível do verso. | A composição-base foi conferida nas páginas oficiais dos seis sabores. |
+
+> [!warning] Whey Nutra Gold 3W
+> Os valores do sabor Torta de Limão não são mais exibidos como se servissem para todos os sabores. Nos outros cinco sabores, o site mostra ingredientes e a pendência da tabela até a loja fornecer uma foto legível do verso de cada embalagem.
+
+Na página comercial do Beef Protein aparece uma chamada de 31 g de proteína, mas a imagem oficial da tabela nutricional informa 32 g. O catálogo mantém 32 g porque o rótulo é a fonte principal.
+
 As fotos enviadas pela loja em 19 de agosto de 2026 foram usadas para identificar produtos, transcrever os rótulos e cadastrar as marcas que não possuem uma foto oficial confiável na internet. Antes de entrarem no projeto, as fotos frontais foram giradas automaticamente, enquadradas em fundo branco, reduzidas para 1200 por 1200 pixels e convertidas para WebP. Esse tratamento mantém todos os cards do catálogo no mesmo tamanho sem substituir o rótulo real por uma imagem parecida.
 
 ## Produtos cadastrados a partir das fotos da loja
@@ -82,8 +98,10 @@ O aviso `Imagem de referência` permanece visível enquanto o modelo real não f
 
 1. Compare marca, peso, sabor e versão da embalagem.
 2. Confirme autorização do fabricante, distribuidor ou autor para uso comercial.
-3. Leia a tabela nutricional da mesma embalagem usada na foto.
-4. Cadastre somente preço e estoque informados pela JNE.
-5. Execute `npm run check` e `npm run build`.
+3. Leia a tabela nutricional da mesma embalagem e do mesmo sabor usado na foto.
+4. Confira separadamente ingredientes, alergênicos, lactose e glúten.
+5. Não reutilize valores de outro sabor sem confirmação expressa do fabricante.
+6. Cadastre somente preço e estoque informados pela JNE.
+7. Execute `npm run check` e `npm run build`.
 
 Consulte também [[01 - Produtos e estoque]] e [[02 - Cadastro rápido e perfis nutricionais]].

@@ -58,14 +58,33 @@ Cada linha precisa ter um valor para cada coluna. Se a tabela tem duas colunas, 
 > [!warning] Dados do rótulo
 > Não calcule, arredonde ou complete valores ausentes. Não invente `%VD`. Mantenha a unidade exatamente como foi conferida no rótulo.
 
+## Regra obrigatória para sabores
+
+Sabor não é apenas uma opção visual. A troca de aromatizante, fruta, cacau ou outro ingrediente pode alterar calorias, carboidratos, açúcares, sódio, alergênicos e a própria lista de ingredientes.
+
+> [!important] Conferência individual
+> Nunca copie a tabela de um sabor para outro por semelhança de nome ou embalagem. Um perfil só pode ser compartilhado quando o fabricante publicar a mesma tabela e a mesma fórmula-base para todas as variações. Sem essa confirmação, deixe a tabela pendente.
+
+Para cada sabor:
+
+1. confira nome, peso e versão da embalagem;
+2. use a foto do rótulo correspondente ao sabor;
+3. transcreva porção, quantidade de porções, calorias e todos os nutrientes;
+4. transcreva ingredientes, alergênicos, lactose e glúten;
+5. compare o resultado com os demais sabores;
+6. crie um perfil próprio quando qualquer informação mudar;
+7. registre a fonte e a data da conferência em [[03 - Fontes e pendências do catálogo]].
+
+Se houver uma nova embalagem ou novo lote, repita a conferência. O rótulo físico prevalece sobre chamadas publicitárias e textos resumidos da página comercial.
+
 ## Fluxo atual para adicionar um produto
 
 1. Coloque a fotografia em `src/assets/produtos/`.
 2. Importe a imagem em `src/data/produtos.ts`.
 3. Cadastre os dados comerciais e os sabores.
 4. Crie o perfil em `src/data/perfis-nutricionais.ts`.
-5. Ligue o produto ao perfil geral com `infoNutricional`.
-6. Quando o rótulo mudar por sabor, ligue cada variação à sua imagem e ao seu perfil.
+5. Ligue o produto ao perfil geral com `infoNutricional` somente se a igualdade entre sabores estiver confirmada.
+6. Quando o rótulo mudar ou ainda não estiver confirmado, ligue cada variação à sua imagem e ao seu próprio perfil.
 7. Execute `npm run check` e `npm run build`.
 8. Confira a página em desktop e celular.
 
