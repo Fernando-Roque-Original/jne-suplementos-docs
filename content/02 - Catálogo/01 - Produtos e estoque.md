@@ -132,24 +132,38 @@ Se a foto mostrar apenas o tipo de item, use também `imagemDeReferencia: true`.
 
 ```ts
 variacoes: [
-  { id: "chocolate", nome: "Chocolate", estoque: 5 },
-  { id: "baunilha", nome: "Baunilha", estoque: 3 },
+  {
+    id: "chocolate",
+    nome: "Chocolate",
+    imagem: imgProdutoChocolate,
+    infoNutricional: perfilChocolate,
+    estoque: 5,
+  },
+  {
+    id: "baunilha",
+    nome: "Baunilha",
+    imagem: imgProdutoBaunilha,
+    infoNutricional: perfilBaunilha,
+    estoque: 3,
+  },
 ],
 ```
 
-Quando existem variações, o carrinho usa o estoque de cada sabor.
+Quando o cliente escolhe uma variação, a página troca a imagem e o rótulo. O carrinho usa o estoque do sabor selecionado.
+
+Se todos os sabores têm a mesma tabela, reutilize o mesmo perfil em cada variação. Se valores, ingredientes ou alertas mudam, crie perfis separados. Quando `imagem` ou `infoNutricional` não forem informados na variação, o site usa o valor geral do produto.
 
 Quando a loja ainda não conferiu o estoque separado por sabor, omita `estoque` nas variações. O site usará o estoque total do produto. Não distribua o total por estimativa.
 
 ## 7. Informações nutricionais
 
-O cadastro comercial e o perfil do rótulo ficam separados. O produto apenas aponta para um perfil:
+O cadastro comercial e o perfil do rótulo ficam separados. O produto pode apontar para um perfil geral:
 
 ```ts
 infoNutricional: perfilNutraWhey,
 ```
 
-As tabelas, ingredientes e observações ficam em `src/data/perfis-nutricionais.ts`. Um único componente exibe todos os formatos, inclusive múltiplas porções, perfil de aminoácidos e ativos por cápsula.
+As variações também podem apontar para perfis próprios quando o rótulo muda por sabor. As tabelas, ingredientes e observações ficam em `src/data/perfis-nutricionais.ts`. Um único componente exibe todos os formatos, inclusive múltiplas porções, perfil de aminoácidos e ativos por cápsula.
 
 Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo e [[03 - Fontes e pendências do catálogo]] para verificar as origens das fotos e rótulos.
 
@@ -170,6 +184,6 @@ Troque os itens de teste por produtos reais e confirme a autorização de uso da
 
 ## Estado atual do catálogo
 
-O catálogo possui 15 produtos ativos. BCAA e glutamina demonstrativos foram desativados. As fotos oficiais da Nyer, da Gummy e da linha de creatina Absolut foram adicionadas; acessórios usam fotografias identificadas como referência.
+O catálogo possui 15 produtos ativos. BCAA e glutamina demonstrativos foram desativados. Fotos oficiais por sabor foram adicionadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair; acessórios usam fotografias identificadas como referência.
 
 Os produtos sem preço local confirmado usam `sobConsulta: true`. Consulte [[03 - Fontes e pendências do catálogo]] antes da divulgação comercial.

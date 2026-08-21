@@ -25,9 +25,14 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 | Termogênico Brutal             | [Nyer Nutrition](https://nyersuplementos.com/products/termogenicobrutal)                                                       | foto e apresentação                    |
 | Creatina Absolut 300 g         | [Absolut Nutrition](https://www.absolutnutrition.com.br/produtos/creatina-100-pure-de-100g-150g-300g-absolut-nutrition-1umbw/) | foto da linha e conferência do produto |
 | Gummy Hair 180 g               | [Gummy Original](https://gummy.com.br/products/gummy-hair%C2%AE-tutti-frutti-180-g)                                            | foto, sabores e tabela nutricional     |
+| Whey Nutra Gold 3W 900 g       | [Nutra Gold](https://nutragold.com.br/produtos/)                                                                                | fotos separadas dos seis sabores       |
 
 > [!important]
 > Preços encontrados nessas páginas não são preços da JNE. O item fica `sobConsulta: true` até a loja informar o valor e o estoque locais.
+
+As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os quatro rótulos do Hydro usam a mesma tabela numérica; ingredientes e declaração de glúten foram cadastrados separadamente.
+
+As fotos enviadas pela loja em 19 de agosto de 2026 serviram para identificar produtos e conferir rótulos. Elas não foram usadas como imagem principal porque possuem fundo de loja, variação de luz e enquadramento inconsistente.
 
 ## Fotos de referência
 
@@ -38,7 +43,6 @@ O aviso `Imagem de referência` permanece visível enquanto o modelo real não f
 
 ## Informações pendentes
 
-- Whey Nutra Gold 3W: foto oficial da versão vendida;
 - Maniac Black: foto oficial da versão vendida;
 - Tribullus Gold 2000 mg: marca, quantidade de cápsulas, foto frontal e rótulo;
 - garrafa inox: capacidade, cor, modelo, preço e estoque;

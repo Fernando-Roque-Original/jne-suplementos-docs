@@ -19,7 +19,7 @@ O cadastro foi reorganizado para diminuir a repetição. Agora existem três res
 | Apresentação | `src/components/InformacaoNutricional.tsx` | transforma qualquer perfil em tabela responsiva |
 
 > [!important]
-> O perfil pertence ao produto, não ao sabor. Chocolate, morango e outros sabores continuam sendo variações do mesmo cadastro e usam a mesma tabela fornecida.
+> Use um perfil geral somente quando todos os sabores tiverem o mesmo rótulo. Quando valores, ingredientes ou alertas mudarem, associe `imagem` e `infoNutricional` à variação correspondente.
 
 ## O que melhorou
 
@@ -27,6 +27,7 @@ O cadastro foi reorganizado para diminuir a repetição. Agora existem três res
 - tabelas simples e tabelas com várias doses usam o mesmo formato;
 - um produto pode ter uma tabela nutricional e outra de aminoácidos ou ativos;
 - ingredientes e observações são campos opcionais;
+- a página troca foto e rótulo quando o sabor é selecionado;
 - o build detecta linhas com quantidade incorreta de valores;
 - tabelas extensas recebem rolagem interna no celular;
 - URLs antigas dos produtos continuam redirecionando para o cadastro atual.
@@ -63,9 +64,22 @@ Cada linha precisa ter um valor para cada coluna. Se a tabela tem duas colunas, 
 2. Importe a imagem em `src/data/produtos.ts`.
 3. Cadastre os dados comerciais e os sabores.
 4. Crie o perfil em `src/data/perfis-nutricionais.ts`.
-5. Ligue o produto ao perfil com `infoNutricional`.
-6. Execute `npm run check` e `npm run build`.
-7. Confira a página em desktop e celular.
+5. Ligue o produto ao perfil geral com `infoNutricional`.
+6. Quando o rótulo mudar por sabor, ligue cada variação à sua imagem e ao seu perfil.
+7. Execute `npm run check` e `npm run build`.
+8. Confira a página em desktop e celular.
+
+Exemplo de variação com foto e rótulo próprios:
+
+```ts
+{
+  id: "chocolate",
+  nome: "Chocolate",
+  imagem: imgChocolate,
+  infoNutricional: perfilChocolate,
+  estoque: 5,
+}
+```
 
 ## Como reduzir ainda mais o trabalho
 

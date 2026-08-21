@@ -8,6 +8,10 @@ tags: [changelog]
 
 ## 2026-08-21
 
+- fotos oficiais em alta resolução vinculadas aos sabores do Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair;
+- página de produto atualizada para trocar embalagem e informação nutricional ao selecionar o sabor;
+- ingredientes e declaração de glúten do Hydro separados conforme cada rótulo oficial;
+- manual de cadastro atualizado para explicar imagens e perfis nutricionais por variação;
 - catálogo ampliado para 15 produtos ativos;
 - Whey Gourmet Nyer, Beef Protein Nyer e Gummy Hair adicionados com tabelas estruturadas;
 - fotos oficiais adicionadas aos produtos Nyer, Gummy Hair e à linha de creatina Absolut;
