@@ -50,4 +50,4 @@ flowchart LR
 
 ## Estado do catálogo
 
-O catálogo está em migração dos dados demonstrativos para produtos reais. Antes de divulgar a loja, confira preços, estoques, imagens e rótulos seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] e [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]].
+O catálogo já possui oito produtos estruturados com perfis nutricionais. BCAA, glutamina e coqueteleira ainda são demonstrativos. Antes de divulgar a loja, confira preços, estoques, imagens e rótulos seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] e [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]].

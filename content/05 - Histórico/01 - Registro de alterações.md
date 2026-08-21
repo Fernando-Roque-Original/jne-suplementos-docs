@@ -6,6 +6,15 @@ tags: [changelog]
 
 # Registro de alterações
 
+## 2026-08-21
+
+- revisão do estado atual da branch principal do site;
+- confirmação da mesclagem dos perfis nutricionais e produtos;
+- horário da loja atualizado para segunda a domingo, das 9h às 23h;
+- README reorganizado com fluxo do pedido, estrutura, manutenção e limites atuais;
+- estado dos produtos reais e demonstrativos esclarecido;
+- documentação do Quartz alinhada com a versão atual do catálogo.
+
 ## 2026-08-12
 
 - perfis nutricionais separados dos dados comerciais;

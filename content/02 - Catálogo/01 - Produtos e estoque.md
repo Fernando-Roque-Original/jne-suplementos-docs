@@ -149,3 +149,20 @@ Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo co
 ## Antes de publicar
 
 Troque os itens de teste por produtos reais e confirme a autorização de uso das imagens e informações dos fabricantes.
+
+## Estado atual do catálogo
+
+O catálogo já possui oito cadastros estruturados com dados comerciais e perfis nutricionais:
+
+- Whey Nutra Gold 3W;
+- Hydro Protein Nyer;
+- Creatina Absolut 100% Pure;
+- Creatina Nyer 100% Pura;
+- Maniac Black;
+- Dark Pump Nyer;
+- Termogênico Brutal Nyer;
+- Multivitamínico Nyer Nutrition.
+
+BCAA, glutamina e coqueteleira ainda são cadastros demonstrativos. Antes da divulgação comercial, substitua esses itens, desative-os com `ativo: false` ou confirme seus dados reais.
+
+As imagens atuais também precisam ser comparadas com os produtos cadastrados. Um perfil nutricional real não significa que a fotografia, o preço e o estoque já tenham sido confirmados.
