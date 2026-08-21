@@ -8,6 +8,10 @@ tags: [changelog]
 
 ## 2026-08-21
 
+- identidade visual oficial aplicada ao cabeçalho, rodapé e apresentação da loja;
+- favicon antigo substituído pelo símbolo compacto da JNE no site e no Quartz;
+- metadados de compartilhamento atualizados com a marca principal;
+- manual da identidade visual criado com caminhos portáveis e instruções de substituição;
 - catálogo ampliado de 15 para 25 produtos ativos a partir das fotos enviadas pela loja;
 - onze produtos cadastrados com imagem, descrição e tabela ou componentes do rótulo;
 - fotos oficiais da Nutra Gold aplicadas ao UCII, Coenzima Q10, Ômega 3, Hair Bomb e Nutra Energy;
@@ -55,7 +59,7 @@ tags: [changelog]
 - busca e filtros de categoria adicionados;
 - validação do carrinho implementada;
 - mensagem do WhatsApp ampliada;
-- dependências do Lovable removidas;
+- dependências antigas do protótipo removidas;
 - manual Quartz publicado no GitHub Pages;
 - documentação organizada em seções numeradas;
 - caminhos locais substituídos por caminhos relativos ao repositório.

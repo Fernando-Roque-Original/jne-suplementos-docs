@@ -1,5 +1,9 @@
 # Documentação da JNE Suplementos
 
+<p align="center">
+  <img src="content/assets/marca/jne-logo-principal.png" alt="JNE Suplementos" width="240">
+</p>
+
 Este repositório contém o cofre Obsidian e o site Quartz usado para documentar o catálogo da JNE Suplementos.
 
 ## Links
@@ -19,6 +23,7 @@ A pasta `content/` é o cofre compartilhado. Ela reúne:
 - publicação no GitHub Pages;
 - curso básico do código Next.js;
 - planejamento do painel de produtos e de uma futura operação de e-commerce.
+- identidade visual, favicon e imagens de compartilhamento.
 
 ## Editar no Obsidian
 

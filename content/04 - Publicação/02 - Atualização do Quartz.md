@@ -55,6 +55,19 @@ node quartz/bootstrap-cli.mjs build --serve
 
 O terminal informa o endereço local, normalmente `http://localhost:8080`.
 
+## Atualizar a identidade visual do Quartz
+
+O favicon e a imagem de compartilhamento da documentação ficam nestes arquivos:
+
+```text
+quartz/static/icon.png
+quartz/static/og-image.png
+```
+
+Substitua os arquivos mantendo os nomes e execute o build. O navegador pode manter o favicon anterior em cache; nesse caso, faça uma atualização forçada da página ou abra a documentação em uma janela privativa.
+
+As imagens exibidas dentro do tópico de identidade ficam em `content/assets/marca/`. Esses caminhos são relativos ao repositório e funcionam em qualquer computador.
+
 ## 4. Colaborador com acesso ao repositório
 
 O proprietário deve adicionar a pessoa em **Settings > Collaborators** no repositório `Fernando-Roque-Original/jne-suplementos-docs`.

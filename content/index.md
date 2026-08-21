@@ -14,7 +14,7 @@ Este material registra a estrutura do site, o fluxo de pedidos e os procedimento
 
 ### [[01 - Visão geral]]
 
-Apresentação do projeto, tecnologias e estrutura do frontend.
+Apresentação do projeto, tecnologias, estrutura do frontend e [[01 - Visão geral/03 - Identidade visual da JNE|identidade visual da JNE]].
 
 ### [[02 - Catálogo]]
 
