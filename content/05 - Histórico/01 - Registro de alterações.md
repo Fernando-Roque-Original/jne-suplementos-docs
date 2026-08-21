@@ -8,6 +8,13 @@ tags: [changelog]
 
 ## 2026-08-21
 
+- catálogo ampliado para 15 produtos ativos;
+- Whey Gourmet Nyer, Beef Protein Nyer e Gummy Hair adicionados com tabelas estruturadas;
+- fotos oficiais adicionadas aos produtos Nyer, Gummy Hair e à linha de creatina Absolut;
+- garrafa e coqueteleiras cadastradas com fotos licenciadas e aviso de imagem de referência;
+- modo `sobConsulta` criado para itens sem preço ou estoque local confirmado;
+- BCAA e glutamina demonstrativos desativados;
+- fontes, licenças e pendências comerciais registradas;
 - revisão do estado atual da branch principal do site;
 - confirmação da mesclagem dos perfis nutricionais e produtos;
 - horário da loja atualizado para segunda a domingo, das 9h às 23h;

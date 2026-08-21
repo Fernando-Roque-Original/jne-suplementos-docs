@@ -50,4 +50,4 @@ flowchart LR
 
 ## Estado do catálogo
 
-O catálogo já possui oito produtos estruturados com perfis nutricionais. BCAA, glutamina e coqueteleira ainda são demonstrativos. Antes de divulgar a loja, confira preços, estoques, imagens e rótulos seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] e [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]].
+O catálogo possui 15 produtos ativos. Produtos sem preço local confirmado aparecem como `Sob consulta`; fotos genéricas são identificadas como `Imagem de referência`. BCAA e glutamina demonstrativos foram desativados. Antes de divulgar a loja, confira [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]], [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]] e [[02 - Catálogo/03 - Fontes e pendências do catálogo|Fontes e pendências do catálogo]].

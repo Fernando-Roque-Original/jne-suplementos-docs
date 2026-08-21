@@ -60,7 +60,7 @@ src/data/produtos.ts
 Importe a imagem no início do arquivo:
 
 ```ts
-import imgCreatinaIntegral from "@/assets/produtos/integralmedica-creatina-300g.webp";
+import imgCreatinaIntegral from "@/assets/produtos/integralmedica-creatina-300g.webp"
 ```
 
 Adicione o produto dentro da lista `produtos`:
@@ -84,33 +84,51 @@ Adicione o produto dentro da lista `produtos`:
 
 ## 3. Campos do produto
 
-| Campo | Função | Exemplo |
-|---|---|---|
-| `id` | Identificador único usado internamente | `creatina-integralmedica-300g` |
-| `nome` | Nome exibido no catálogo e WhatsApp | `Creatina Monohidratada 300g` |
-| `marca` | Marca exibida e usada na busca | `Integralmédica` |
-| `categoria` | Grupo usado pelo filtro | `creatina` |
-| `descricao` | Descrição curta do produto | `Creatina pura...` |
-| `preco` | Preço sem `R$`, usando ponto decimal | `99.90` |
-| `imagem` | Nome da importação feita no topo | `imgCreatinaIntegral` |
-| `peso` | Peso ou quantidade da embalagem | `300g` |
-| `estoque` | Quantidade disponível | `10` |
-| `ativo` | `true` mostra; `false` esconde | `true` |
-| `destaque` | Inclui o item nos destaques | `true` |
-| `maisVendido` | Inclui o item nos mais vendidos | `false` |
+| Campo                | Função                                                             | Exemplo                        |
+| -------------------- | ------------------------------------------------------------------ | ------------------------------ |
+| `id`                 | Identificador único usado internamente                             | `creatina-integralmedica-300g` |
+| `nome`               | Nome exibido no catálogo e WhatsApp                                | `Creatina Monohidratada 300g`  |
+| `marca`              | Marca exibida e usada na busca                                     | `Integralmédica`               |
+| `categoria`          | Grupo usado pelo filtro                                            | `creatina`                     |
+| `descricao`          | Descrição curta do produto                                         | `Creatina pura...`             |
+| `preco`              | Preço sem `R$`, usando ponto decimal                               | `99.90`                        |
+| `imagem`             | Nome da importação feita no topo                                   | `imgCreatinaIntegral`          |
+| `peso`               | Peso ou quantidade da embalagem                                    | `300g`                         |
+| `estoque`            | Quantidade disponível                                              | `10`                           |
+| `sobConsulta`        | Mostra consulta pelo WhatsApp sem adicionar valor zero ao carrinho | `true`                         |
+| `imagemDeReferencia` | Avisa que a foto não representa o modelo exato                     | `true`                         |
+| `ativo`              | `true` mostra; `false` esconde                                     | `true`                         |
+| `destaque`           | Inclui o item nos destaques                                        | `true`                         |
+| `maisVendido`        | Inclui o item nos mais vendidos                                    | `false`                        |
 
 ## 4. Categorias permitidas
 
 - `whey-protein`
+- `proteinas`
 - `creatina`
 - `pre-treino`
 - `hipercaloricos`
 - `vitaminas-minerais`
 - `aminoacidos`
 - `termogenicos`
+- `acessorios`
 - `outros`
 
-## 5. Produtos com sabores
+## 5. Produto sem preço confirmado
+
+Quando preço ou estoque ainda não foram informados pela loja, use:
+
+```ts
+preco: 0,
+estoque: 0,
+sobConsulta: true,
+```
+
+O cliente verá `Preço sob consulta` e poderá enviar o produto e a variação escolhida diretamente para o WhatsApp. O item não entra no carrinho com valor zero.
+
+Se a foto mostrar apenas o tipo de item, use também `imagemDeReferencia: true`.
+
+## 6. Produtos com sabores
 
 ```ts
 variacoes: [
@@ -123,7 +141,7 @@ Quando existem variações, o carrinho usa o estoque de cada sabor.
 
 Quando a loja ainda não conferiu o estoque separado por sabor, omita `estoque` nas variações. O site usará o estoque total do produto. Não distribua o total por estimativa.
 
-## 6. Informações nutricionais
+## 7. Informações nutricionais
 
 O cadastro comercial e o perfil do rótulo ficam separados. O produto apenas aponta para um perfil:
 
@@ -133,7 +151,7 @@ infoNutricional: perfilNutraWhey,
 
 As tabelas, ingredientes e observações ficam em `src/data/perfis-nutricionais.ts`. Um único componente exibe todos os formatos, inclusive múltiplas porções, perfil de aminoácidos e ativos por cápsula.
 
-Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo.
+Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo e [[03 - Fontes e pendências do catálogo]] para verificar as origens das fotos e rótulos.
 
 ## Checklist
 
@@ -152,17 +170,6 @@ Troque os itens de teste por produtos reais e confirme a autorização de uso da
 
 ## Estado atual do catálogo
 
-O catálogo já possui oito cadastros estruturados com dados comerciais e perfis nutricionais:
+O catálogo possui 15 produtos ativos. BCAA e glutamina demonstrativos foram desativados. As fotos oficiais da Nyer, da Gummy e da linha de creatina Absolut foram adicionadas; acessórios usam fotografias identificadas como referência.
 
-- Whey Nutra Gold 3W;
-- Hydro Protein Nyer;
-- Creatina Absolut 100% Pure;
-- Creatina Nyer 100% Pura;
-- Maniac Black;
-- Dark Pump Nyer;
-- Termogênico Brutal Nyer;
-- Multivitamínico Nyer Nutrition.
-
-BCAA, glutamina e coqueteleira ainda são cadastros demonstrativos. Antes da divulgação comercial, substitua esses itens, desative-os com `ativo: false` ou confirme seus dados reais.
-
-As imagens atuais também precisam ser comparadas com os produtos cadastrados. Um perfil nutricional real não significa que a fotografia, o preço e o estoque já tenham sido confirmados.
+Os produtos sem preço local confirmado usam `sobConsulta: true`. Consulte [[03 - Fontes e pendências do catálogo]] antes da divulgação comercial.
