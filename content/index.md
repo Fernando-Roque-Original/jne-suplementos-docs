@@ -14,11 +14,11 @@ Este material registra a estrutura do site, o fluxo de pedidos e os procedimento
 
 ### [[01 - Visão geral]]
 
-Apresentação do projeto, tecnologias e estrutura do frontend.
+Apresentação do projeto, tecnologias, estrutura do frontend e [[01 - Visão geral/03 - Identidade visual da JNE|identidade visual da JNE]].
 
 ### [[02 - Catálogo]]
 
-Instruções para adicionar imagens, cadastrar produtos, alterar preços e controlar estoque.
+Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
 
 ### [[03 - Pedido e WhatsApp]]
 
@@ -38,7 +38,7 @@ Mapa das páginas, componentes e funções, com instruções para alterar textos
 
 ### [[07 - Evolução para e-commerce]]
 
-Migração para Next.js, comparação com uma operação completa e planejamento de login, banco, checkout, segurança, proteção de dados e documentos fiscais.
+Migração para Next.js, comparação com uma operação completa e planejamento de login, banco, checkout, segurança, proteção de dados, documentos fiscais, painel de produtos e gestão de estoque.
 
 ```mermaid
 flowchart LR
@@ -50,4 +50,4 @@ flowchart LR
 
 ## Estado do catálogo
 
-Os nomes, marcas e preços atuais são dados de teste. Antes de divulgar a loja, substitua-os pelos dados reais seguindo [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]].
+O catálogo possui 25 produtos ativos. Produtos sem preço local confirmado aparecem como `Sob consulta`; fotos genéricas são identificadas como `Imagem de referência`. BCAA e glutamina demonstrativos foram desativados. Ioimbina, Tribullus Gold e Diamond estão registrados, mas fora da vitrine até a regularização sanitária ser comprovada. Antes de divulgar a loja, confira [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]], [[02 - Catálogo/02 - Cadastro rápido e perfis nutricionais|Cadastro rápido e perfis nutricionais]], [[02 - Catálogo/03 - Fontes e pendências do catálogo|Fontes e pendências do catálogo]] e [[02 - Catálogo/04 - Checkup do catálogo|Checkup do catálogo]].

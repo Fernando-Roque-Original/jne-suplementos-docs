@@ -40,15 +40,16 @@ O primeiro comando verifica TypeScript e regras do código. O segundo confirma q
 
 ## Mapa das pastas
 
-| Caminho | Responsabilidade |
-| --- | --- |
-| `src/app/` | Páginas, layouts e endereços do Next.js |
+| Caminho           | Responsabilidade                                              |
+| ----------------- | ------------------------------------------------------------- |
+| `src/app/`        | Páginas, layouts e endereços do Next.js                       |
 | `src/components/` | Partes reutilizáveis, como Header, Footer e cartão de produto |
-| `src/data/` | Produtos, categorias e tipos dos dados |
-| `src/config/` | Dados gerais da loja |
-| `src/lib/` | Regras do carrinho, WhatsApp e formatação |
-| `src/assets/` | Imagens do banner e dos produtos |
-| `src/styles.css` | Cores, fontes e estilos globais |
+| `src/data/`       | Produtos, categorias e tipos dos dados                        |
+| `src/config/`     | Dados gerais da loja                                          |
+| `src/lib/`        | Regras do carrinho, WhatsApp e formatação                     |
+| `src/assets/`     | Imagens do banner e dos produtos                              |
+| `public/marca/`   | Logo principal e símbolo compacto da JNE                      |
+| `src/styles.css`  | Cores, fontes e estilos globais                               |
 
 ## Estrutura comum de todas as páginas
 
@@ -64,6 +65,8 @@ Footer
 
 `src/components/Header.tsx` controla o cabeçalho exibido no topo do site. Ele contém a identidade da loja, os links de navegação, o acesso ao carrinho e o menu para celular.
 
+O cabeçalho usa `public/marca/jne-simbolo.png`. Esse arquivo foi escolhido porque continua legível em tamanho pequeno. A marca completa ficaria comprimida nesse espaço.
+
 Edite esse arquivo para:
 
 - trocar o texto ou a marca no topo;
@@ -76,6 +79,8 @@ Depois de alterar, teste em tela grande e em tela pequena. Um link do Header dev
 ### Footer
 
 `src/components/Footer.tsx` controla o rodapé exibido no final de todas as páginas. Ele apresenta dados da loja, navegação auxiliar, contato e redes sociais.
+
+O rodapé usa `public/marca/jne-logo-principal.png`, pois há espaço para mostrar o nome completo sem perda de leitura.
 
 Edite esse arquivo para mudar a organização visual ou os textos fixos. Dados como telefone, endereço, horário e links sociais devem ser alterados preferencialmente em `src/config/loja.ts`, pois o mesmo dado pode ser usado em mais de um lugar.
 
@@ -109,6 +114,8 @@ Ela reúne:
 - apresentação da loja.
 
 Para trocar a imagem do banner, substitua `src/assets/hero.jpg` por outra imagem com o mesmo nome ou importe um novo arquivo em `src/app/PaginaInicial.tsx`.
+
+A apresentação institucional também usa a marca principal. As regras para substituir logo, símbolo, favicon e imagem de compartilhamento estão em [[01 - Visão geral/03 - Identidade visual da JNE|Identidade visual da JNE]].
 
 As funções `Secao` e `GradeProdutos`, no final do arquivo, evitam repetir a mesma estrutura visual. `Secao` monta o título e o espaçamento de cada bloco. `GradeProdutos` recebe uma lista e cria um `CardProduto` para cada produto.
 
@@ -242,6 +249,12 @@ Esse arquivo define fontes, cores, bordas, fundos e estilos globais. As variáve
 
 As classes usadas diretamente nos arquivos `.tsx`, como `px-4`, `text-sm` e `bg-card`, são utilitários do Tailwind CSS. Antes de mudar uma cor em muitos componentes, verifique se é melhor alterar o token correspondente em `src/styles.css`.
 
+## Ícone da aba e compartilhamento
+
+O Next.js reconhece automaticamente os arquivos `src/app/icon.png` e `src/app/apple-icon.png`. O primeiro aparece na aba do navegador. O segundo é usado quando a página é salva na tela inicial de um celular.
+
+O arquivo `src/app/layout.tsx` contém os metadados gerais. A propriedade `openGraph.images` define a imagem mostrada quando o endereço do site é compartilhado em aplicativos compatíveis. A propriedade `twitter.images` usa a mesma marca para cartões de compartilhamento.
+
 ## Como atualizar textos e páginas
 
 1. Localize a página pelo mapa deste guia.
@@ -272,7 +285,7 @@ export default function PaginaDuvidas() {
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1>Dúvidas frequentes</h1>
     </div>
-  );
+  )
 }
 ```
 
@@ -280,15 +293,15 @@ Depois, adicione o link no `Header` ou no `Footer`, se a página precisar aparec
 
 ## Teste mínimo por tipo de alteração
 
-| Alteração | O que conferir |
-| --- | --- |
-| Header ou Footer | Todos os links e visualização no celular |
-| Página inicial | Banner, seções, busca e produtos em destaque |
-| Produto | Card, detalhes, variação, estoque e preço |
-| Carrinho | Adicionar, alterar quantidade, remover e recarregar a página |
-| WhatsApp | Número correto e resumo completo da compra |
-| Estilos | Contraste, leitura e comportamento em telas pequenas |
-| Nova página | URL, Header, Footer, título e build de produção |
+| Alteração        | O que conferir                                               |
+| ---------------- | ------------------------------------------------------------ |
+| Header ou Footer | Todos os links e visualização no celular                     |
+| Página inicial   | Banner, seções, busca e produtos em destaque                 |
+| Produto          | Card, detalhes, variação, estoque e preço                    |
+| Carrinho         | Adicionar, alterar quantidade, remover e recarregar a página |
+| WhatsApp         | Número correto e resumo completo da compra                   |
+| Estilos          | Contraste, leitura e comportamento em telas pequenas         |
+| Nova página      | URL, Header, Footer, título e build de produção              |
 
 ## Publicação das alterações
 

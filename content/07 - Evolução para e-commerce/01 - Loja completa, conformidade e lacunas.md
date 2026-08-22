@@ -186,19 +186,19 @@ Esses documentos precisam refletir o processo real. Uma política copiada de out
 
 ## Comparação com a JNE atual
 
-| Área | Situação atual | Necessário para e-commerce completo |
-| --- | --- | --- |
-| Catálogo | Arquivo TypeScript | Banco e painel administrativo |
-| Estoque | Valor informativo local | Reserva e baixa transacional |
-| Cliente | Sem conta | Autenticação e área do cliente |
-| Carrinho | `localStorage` | Validação de preço e estoque no servidor |
-| Pedido | Texto no WhatsApp | Registro permanente e estados do pedido |
-| Pagamento | Combinado no atendimento | Provedor, webhook, conciliação e estorno |
-| Entrega | Combinada no atendimento | Frete, etiqueta e rastreamento |
-| Fiscal | Processo não integrado | Documento definido com contador e emissor |
-| LGPD | Coleta limitada no site | Governança, aviso, direitos, retenção e segurança |
-| Consumidor | Atendimento manual | Políticas, confirmação, cancelamento e protocolos |
-| Operação | Sem painel | Administração, permissões, logs e auditoria |
+| Área       | Situação atual           | Necessário para e-commerce completo               |
+| ---------- | ------------------------ | ------------------------------------------------- |
+| Catálogo   | Arquivo TypeScript       | Banco e painel administrativo                     |
+| Estoque    | Valor informativo local  | Reserva e baixa transacional                      |
+| Cliente    | Sem conta                | Autenticação e área do cliente                    |
+| Carrinho   | `localStorage`           | Validação de preço e estoque no servidor          |
+| Pedido     | Texto no WhatsApp        | Registro permanente e estados do pedido           |
+| Pagamento  | Combinado no atendimento | Provedor, webhook, conciliação e estorno          |
+| Entrega    | Combinada no atendimento | Frete, etiqueta e rastreamento                    |
+| Fiscal     | Processo não integrado   | Documento definido com contador e emissor         |
+| LGPD       | Coleta limitada no site  | Governança, aviso, direitos, retenção e segurança |
+| Consumidor | Atendimento manual       | Políticas, confirmação, cancelamento e protocolos |
+| Operação   | Sem painel               | Administração, permissões, logs e auditoria       |
 
 ## Ordem recomendada
 

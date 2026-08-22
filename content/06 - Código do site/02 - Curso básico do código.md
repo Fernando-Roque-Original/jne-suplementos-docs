@@ -59,23 +59,23 @@ HTML define a estrutura de uma página. Ele usa elementos, também chamados de t
 
 ### Tags mais comuns
 
-| Tag | Para que serve |
-| --- | --- |
-| `<header>` | Cabeçalho de uma página ou seção |
-| `<footer>` | Rodapé de uma página ou seção |
-| `<main>` | Conteúdo principal da página |
-| `<nav>` | Área de navegação e menus |
-| `<section>` | Agrupa uma seção relacionada |
-| `<div>` | Agrupamento genérico para layout |
-| `<h1>` | Título principal da página |
-| `<h2>` | Título de uma seção |
-| `<p>` | Parágrafo |
-| `<a>` | Link |
-| `<button>` | Botão de ação |
-| `<img>` | Imagem |
-| `<input>` | Campo de entrada |
-| `<label>` | Nome ou explicação de um campo |
-| `<form>` | Conjunto de campos enviado pelo usuário |
+| Tag         | Para que serve                          |
+| ----------- | --------------------------------------- |
+| `<header>`  | Cabeçalho de uma página ou seção        |
+| `<footer>`  | Rodapé de uma página ou seção           |
+| `<main>`    | Conteúdo principal da página            |
+| `<nav>`     | Área de navegação e menus               |
+| `<section>` | Agrupa uma seção relacionada            |
+| `<div>`     | Agrupamento genérico para layout        |
+| `<h1>`      | Título principal da página              |
+| `<h2>`      | Título de uma seção                     |
+| `<p>`       | Parágrafo                               |
+| `<a>`       | Link                                    |
+| `<button>`  | Botão de ação                           |
+| `<img>`     | Imagem                                  |
+| `<input>`   | Campo de entrada                        |
+| `<label>`   | Nome ou explicação de um campo          |
+| `<form>`    | Conjunto de campos enviado pelo usuário |
 
 ### Header e Footer
 
@@ -121,7 +121,7 @@ Exemplo simples:
 
 ```ts
 function somar(a: number, b: number) {
-  return a + b;
+  return a + b
 }
 ```
 
@@ -133,7 +133,7 @@ TypeScript é JavaScript com verificação de tipos. Ele ajuda a identificar pro
 
 ```ts
 function formatarNome(nome: string): string {
-  return nome.trim();
+  return nome.trim()
 }
 ```
 
@@ -163,7 +163,7 @@ O `x` no final indica que o arquivo pode usar JSX:
 
 ```tsx
 function Titulo() {
-  return <h1>JNE Suplementos</h1>;
+  return <h1>JNE Suplementos</h1>
 }
 ```
 
@@ -172,9 +172,9 @@ function Titulo() {
 JSX é a sintaxe que permite escrever elementos visuais dentro do JavaScript ou TypeScript.
 
 ```tsx
-const nome = "Creatina";
+const nome = "Creatina"
 
-return <h2>{nome}</h2>;
+return <h2>{nome}</h2>
 ```
 
 As chaves `{}` permitem inserir uma variável ou expressão JavaScript no conteúdo visual.
@@ -182,9 +182,9 @@ As chaves `{}` permitem inserir uma variável ou expressão JavaScript no conte�
 Para exibir uma lista, usa-se frequentemente `map`:
 
 ```tsx
-{produtos.map((produto) => (
-  <CardProduto key={produto.id} produto={produto} />
-))}
+{
+  produtos.map((produto) => <CardProduto key={produto.id} produto={produto} />)
+}
 ```
 
 Esse código percorre a lista `produtos` e cria um cartão para cada item.
@@ -195,7 +195,7 @@ React organiza a interface em componentes. Um componente é uma função que dev
 
 ```tsx
 function Aviso() {
-  return <p>Pedido enviado pelo WhatsApp.</p>;
+  return <p>Pedido enviado pelo WhatsApp.</p>
 }
 ```
 
@@ -211,10 +211,10 @@ Props são valores enviados de um componente para outro.
 
 ```tsx
 function Titulo({ texto }: { texto: string }) {
-  return <h2>{texto}</h2>;
+  return <h2>{texto}</h2>
 }
 
-<Titulo texto="Mais vendidos" />
+;<Titulo texto="Mais vendidos" />
 ```
 
 No site, `CardProduto` recebe uma prop chamada `produto`.
@@ -224,7 +224,7 @@ No site, `CardProduto` recebe uma prop chamada `produto`.
 Estado é um valor que pode mudar enquanto a pessoa usa a página.
 
 ```tsx
-const [busca, setBusca] = useState("");
+const [busca, setBusca] = useState("")
 ```
 
 - `busca` contém o valor atual;
@@ -238,12 +238,12 @@ A busca e os filtros do catálogo são exemplos de estado.
 
 Hooks são funções do React que adicionam recursos aos componentes.
 
-| Hook | Uso no projeto |
-| --- | --- |
-| `useState` | Guarda busca, filtro, quantidade e estados visuais |
-| `useMemo` | Evita recalcular listas sem necessidade |
-| `useEffect` | Executa uma ação após renderização ou mudança de dados |
-| `useContext` | Acessa o carrinho compartilhado |
+| Hook         | Uso no projeto                                         |
+| ------------ | ------------------------------------------------------ |
+| `useState`   | Guarda busca, filtro, quantidade e estados visuais     |
+| `useMemo`    | Evita recalcular listas sem necessidade                |
+| `useEffect`  | Executa uma ação após renderização ou mudança de dados |
+| `useContext` | Acessa o carrinho compartilhado                        |
 
 Hooks devem ser chamados dentro de componentes ou de outros Hooks, nunca dentro de condições comuns.
 
@@ -300,7 +300,7 @@ Guarda as páginas e layouts. Cada rota é uma pasta com um arquivo `page.tsx`. 
 No começo dos arquivos aparecem linhas como:
 
 ```tsx
-import { Header } from "@/components/Header";
+import { Header } from "@/components/Header"
 ```
 
 `import` traz código de outro arquivo. O alias `@/` representa a pasta `src/`. Portanto:
@@ -322,7 +322,7 @@ Imports com chaves trazem uma exportação nomeada. Imports sem chaves normalmen
 `export` permite que outro arquivo importe uma função, variável ou componente.
 
 ```ts
-export const nomeDaLoja = "JNE Suplementos";
+export const nomeDaLoja = "JNE Suplementos"
 ```
 
 Sem `export`, esse valor só pode ser usado dentro do próprio arquivo.
@@ -331,12 +331,12 @@ Sem `export`, esse valor só pode ser usado dentro do próprio arquivo.
 
 Uma rota liga um endereço a uma página.
 
-| Arquivo | Endereço |
-| --- | --- |
-| `src/app/page.tsx` | `/` |
-| `src/app/catalogo/page.tsx` | `/catalogo` |
-| `src/app/carrinho/page.tsx` | `/carrinho` |
-| `src/app/sobre/page.tsx` | `/sobre` |
+| Arquivo                                | Endereço            |
+| -------------------------------------- | ------------------- |
+| `src/app/page.tsx`                     | `/`                 |
+| `src/app/catalogo/page.tsx`            | `/catalogo`         |
+| `src/app/carrinho/page.tsx`            | `/carrinho`         |
+| `src/app/sobre/page.tsx`               | `/sobre`            |
 | `src/app/produto/[produtoId]/page.tsx` | `/produto/algum-id` |
 
 O `page.tsx` colocado diretamente em `src/app` representa a página inicial. Os colchetes em `[produtoId]` indicam uma parte variável do endereço.
@@ -360,7 +360,7 @@ export default function PaginaDuvidas() {
       <h1 className="text-4xl font-bold">Dúvidas frequentes</h1>
       <p className="mt-4">Consulte as respostas antes de fazer seu pedido.</p>
     </div>
-  );
+  )
 }
 ```
 
@@ -393,9 +393,9 @@ Crie `src/components/TituloPagina.tsx`:
 
 ```tsx
 type TituloPaginaProps = {
-  titulo: string;
-  descricao?: string;
-};
+  titulo: string
+  descricao?: string
+}
 
 export function TituloPagina({ titulo, descricao }: TituloPaginaProps) {
   return (
@@ -403,19 +403,16 @@ export function TituloPagina({ titulo, descricao }: TituloPaginaProps) {
       <h1 className="text-4xl font-bold">{titulo}</h1>
       {descricao ? <p className="mt-2">{descricao}</p> : null}
     </header>
-  );
+  )
 }
 ```
 
 Depois importe e use em uma página:
 
 ```tsx
-import { TituloPagina } from "@/components/TituloPagina";
+import { TituloPagina } from "@/components/TituloPagina"
 
-<TituloPagina
-  titulo="Catálogo"
-  descricao="Escolha os produtos disponíveis."
-/>
+;<TituloPagina titulo="Catálogo" descricao="Escolha os produtos disponíveis." />
 ```
 
 O ponto de interrogação em `descricao?: string` significa que a propriedade é opcional.
@@ -424,48 +421,48 @@ O ponto de interrogação em `descricao?: string` significa que a propriedade é
 
 Execute os comandos dentro da pasta do site.
 
-| Comando | O que faz |
-| --- | --- |
-| `npm install` | Instala ou atualiza dependências conforme o projeto |
-| `npm ci` | Instala exatamente as versões do `package-lock.json` |
-| `npm run dev` | Abre o ambiente local de desenvolvimento |
-| `npm run check` | Executa verificação de tipos e lint |
-| `npm run typecheck` | Verifica somente os tipos do TypeScript |
-| `npm run lint` | Procura problemas de padrão e código |
-| `npm run build` | Gera e valida a versão de produção |
-| `npm run start` | Executa localmente o build de produção |
-| `npm run format` | Formata os arquivos com Prettier |
+| Comando             | O que faz                                            |
+| ------------------- | ---------------------------------------------------- |
+| `npm install`       | Instala ou atualiza dependências conforme o projeto  |
+| `npm ci`            | Instala exatamente as versões do `package-lock.json` |
+| `npm run dev`       | Abre o ambiente local de desenvolvimento             |
+| `npm run check`     | Executa verificação de tipos e lint                  |
+| `npm run typecheck` | Verifica somente os tipos do TypeScript              |
+| `npm run lint`      | Procura problemas de padrão e código                 |
+| `npm run build`     | Gera e valida a versão de produção                   |
+| `npm run start`     | Executa localmente o build de produção               |
+| `npm run format`    | Formata os arquivos com Prettier                     |
 
 Não execute `npm install` em qualquer pasta do computador. Confirme que o terminal está na pasta que contém o `package.json` do site.
 
 ## Arquivos importantes fora de `src`
 
-| Arquivo | Função |
-| --- | --- |
-| `package.json` | Lista dependências e comandos do projeto |
-| `package-lock.json` | Registra as versões exatas instaladas |
-| `tsconfig.json` | Configura o TypeScript e o alias `@` |
-| `next.config.ts` | Configura o Next.js |
-| `postcss.config.mjs` | Liga Tailwind CSS ao processo de estilos |
-| `eslint.config.js` | Define regras de análise do código |
-| `.gitignore` | Informa ao Git quais arquivos não devem ser enviados |
+| Arquivo              | Função                                               |
+| -------------------- | ---------------------------------------------------- |
+| `package.json`       | Lista dependências e comandos do projeto             |
+| `package-lock.json`  | Registra as versões exatas instaladas                |
+| `tsconfig.json`      | Configura o TypeScript e o alias `@`                 |
+| `next.config.ts`     | Configura o Next.js                                  |
+| `postcss.config.mjs` | Liga Tailwind CSS ao processo de estilos             |
+| `eslint.config.js`   | Define regras de análise do código                   |
+| `.gitignore`         | Informa ao Git quais arquivos não devem ser enviados |
 
 ## Símbolos que aparecem no código
 
-| Símbolo | Significado comum |
-| --- | --- |
-| `{}` | Bloco de código, objeto ou expressão JSX |
-| `[]` | Lista ou acesso a um item |
-| `()` | Chamada de função ou agrupamento |
-| `=>` | Função curta, chamada arrow function |
-| `===` | Comparação estrita |
-| `&&` | As duas condições precisam ser verdadeiras |
-| `||` | Usa uma condição ou outra |
-| `? :` | Escolha entre dois valores |
-| `?.` | Acessa um valor somente se ele existir |
-| `??` | Usa um valor alternativo quando o primeiro é nulo |
-| `...` | Copia ou espalha itens de objeto ou lista |
-| `${valor}` | Insere um valor dentro de texto com crases |
+| Símbolo    | Significado comum                                 |
+| ---------- | ------------------------------------------------- |
+| `{}`       | Bloco de código, objeto ou expressão JSX          |
+| `[]`       | Lista ou acesso a um item                         |
+| `()`       | Chamada de função ou agrupamento                  |
+| `=>`       | Função curta, chamada arrow function              |
+| `===`      | Comparação estrita                                |
+| `&&`       | As duas condições precisam ser verdadeiras        |
+| `          |                                                   | `   | Usa uma condição ou outra |
+| `? :`      | Escolha entre dois valores                        |
+| `?.`       | Acessa um valor somente se ele existir            |
+| `??`       | Usa um valor alternativo quando o primeiro é nulo |
+| `...`      | Copia ou espalha itens de objeto ou lista         |
+| `${valor}` | Insere um valor dentro de texto com crases        |
 
 ## Alterações seguras para iniciantes
 
