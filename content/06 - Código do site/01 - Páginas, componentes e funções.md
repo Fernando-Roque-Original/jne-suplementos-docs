@@ -48,6 +48,7 @@ O primeiro comando verifica TypeScript e regras do código. O segundo confirma q
 | `src/config/`     | Dados gerais da loja                                          |
 | `src/lib/`        | Regras do carrinho, WhatsApp e formatação                     |
 | `src/assets/`     | Imagens do banner e dos produtos                              |
+| `scripts/`        | Tarefas locais repetíveis, como o tratamento de fotografias   |
 | `public/marca/`   | Logo principal e símbolo compacto da JNE                      |
 | `src/styles.css`  | Cores, fontes e estilos globais                               |
 
@@ -135,7 +136,9 @@ Arquivos: `src/app/produto/[produtoId]/page.tsx` e `ProdutoCliente.tsx`
 
 Endereço: `/produto/identificador-do-produto`
 
-O trecho `[produtoId]` significa que a rota é dinâmica. O valor vem do campo `id` cadastrado em `src/data/produtos.ts`. A página busca o produto, apresenta foto, preço, estoque, descrição, variações e informações nutricionais, e permite adicionar o item ao carrinho.
+O trecho `[produtoId]` significa que a rota é dinâmica. O valor vem do campo `id` cadastrado em `src/data/produtos.ts`. A página busca o produto, apresenta galeria, preço, estoque, descrição, variações e informações nutricionais, e permite adicionar o item ao carrinho.
+
+`ProdutoCliente.tsx` mantém o índice da fotografia selecionada. Quando o cliente troca o sabor, esse índice volta a zero e a página usa primeiro a galeria da variação; quando ela não existe, usa a galeria geral ou a imagem principal.
 
 Não altere o nome `[produtoId]` isoladamente. Ele está ligado à leitura do identificador dentro do arquivo.
 
@@ -193,7 +196,7 @@ Arquivo: `src/data/produtos.ts`
 - `buscarProdutoPorId`: encontra um produto pelo identificador usado na URL;
 - `marcas`: cria automaticamente a lista de marcas usada no filtro.
 
-As imagens ficam em `src/assets/produtos/`. Consulte [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] antes de cadastrar ou substituir itens.
+As imagens ficam em `src/assets/produtos/`. O tipo `ImagemProduto`, declarado em `src/data/tipos.ts`, exige uma imagem, um texto alternativo e uma legenda para cada item da galeria. Consulte [[02 - Catálogo/01 - Produtos e estoque|Produtos e estoque]] e [[02 - Catálogo/05 - Galeria e tratamento de fotos|Galeria e tratamento de fotos]] antes de cadastrar ou substituir itens.
 
 ### Categorias
 

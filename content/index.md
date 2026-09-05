@@ -18,7 +18,7 @@ Apresentação do projeto, tecnologias, estrutura do frontend e [[01 - Visão ge
 
 ### [[02 - Catálogo]]
 
-Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
+Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno, a [[02 - Catálogo/05 - Galeria e tratamento de fotos|galeria de fotos]] e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
 
 ### [[03 - Pedido e WhatsApp]]
 

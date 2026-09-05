@@ -6,6 +6,18 @@ tags: [changelog]
 
 # Registro de alterações
 
+## 2026-09-05
+
+- branches locais comparadas com as versões publicadas após a mesclagem dos PRs anteriores;
+- 29 fotografias reais da loja processadas em WebP quadrado, sem reconstrução generativa dos rótulos;
+- fotos frontais e do verso vinculadas a 16 cadastros, incluindo os três itens mantidos fora da vitrine;
+- galeria acessível criada na página do produto, com legenda, texto alternativo e reinício ao trocar de sabor;
+- foto real do Whey Nutra Gold vinculada somente ao sabor morango;
+- créditos de fotos externas removidos dos produtos que agora usam fotografias próprias da loja;
+- comando reproduzível de tratamento de imagens e manual portável adicionados ao site e ao Quartz;
+- regra de integridade documentada para impedir edição generativa de tabelas, ingredientes e dosagens.
+- resolução de módulos e tipos auxiliares ajustados para validar o Quartz com TypeScript 7.
+
 ## 2026-08-21
 
 - identidade visual oficial aplicada ao cabeçalho, rodapé e apresentação da loja;
