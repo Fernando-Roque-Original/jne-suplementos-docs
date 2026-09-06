@@ -33,6 +33,8 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 | Nutra Energy                      | [Nutra Gold](https://nutragold.com.br/produtos/nutra-energy/)                                                 | foto oficial e conferência do produto    |
 | Beta-Alanina Bluebooster 300 g    | [Lifecenter](https://www.lifecentersuplementos.com.br/bluebooster-beta-alanina-300g)                          | imagem principal da embalagem            |
 | Magnésio & Inositol 300 g         | [Lifecenter](https://www.lifecentersuplementos.com.br/bluebooster-mangesio-inositol-300g-sabor-maracuja)      | imagem principal da embalagem            |
+| Ioimbina & Long Jack Shadow       | [Power Pump](https://www.powerpumpsuplementos.com.br/ioimbina-long-jack-120-caps-shadow)                      | imagem principal da embalagem            |
+| Diamond New Green                 | [Forfarma](https://forfarma.com.br/do/productos/new-green-diamond-30-caps/)                                   | imagem principal da embalagem            |
 
 > [!important]
 > Preços encontrados nessas páginas não são preços da JNE. O item fica `sobConsulta: true` até a loja informar o valor e o estoque locais.
@@ -56,6 +58,8 @@ As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, 
 Na página comercial do Beef Protein aparece uma chamada de 31 g de proteína, mas a imagem oficial da tabela nutricional informa 32 g. O catálogo mantém 32 g porque o rótulo é a fonte principal.
 
 As fotos enviadas pela loja em 19 de agosto de 2026 foram usadas para identificar produtos, transcrever os rótulos e cadastrar as marcas que não possuem uma foto oficial confiável na internet. As capas aprovadas foram reduzidas para até 1200 por 1200 pixels e convertidas para WebP. As fotos reais do verso continuam sem reconstrução generativa.
+
+Ioimbina & Long Jack e Diamond New Green receberam packshots encontrados pela combinação de nome do produto e marca. A embalagem de cada resultado foi comparada com a fotografia da loja antes da substituição. Tabelas, ingredientes e alertas continuam vinculados exclusivamente ao rótulo real da mesma versão do produto.
 
 O Treonato de Magnésio recebeu uma capa com fundo de estúdio assistida por IA e aprovada somente para apresentação da vitrine. As tentativas para Cabelo, Pele & Unha, L-Carnitina e Super Abdomen foram descartadas porque mudaram textos ou detalhes da embalagem. Nesses casos, a fotografia real foi mantida. Tabela e ingredientes continuam vinculados exclusivamente ao rótulo real ou à fonte oficial.
 
