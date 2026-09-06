@@ -13,6 +13,13 @@ tags: [changelog]
 - fotografias originais da frente e do verso preservadas na galeria para conferência do rótulo;
 - fonte externa do Super Abdomen registrada e comparada com a embalagem fotografada na loja;
 - tabelas nutricionais, ingredientes, alertas e situação de publicação mantidos sem alterações.
+- revisão da landing e do catálogo orientada pelas regras de acessibilidade, toque, desempenho e movimento da UI/UX Pro Max;
+- indicador animado adicionado às abas da vitrine com `layoutId`;
+- grade animada e reutilizável criada para as mudanças de busca e categoria;
+- botão acessível para limpar a busca adicionado ao catálogo;
+- menu móvel atualizado com entrada e saída curtas por `AnimatePresence`;
+- animação de entrada retirada do conteúdo principal do hero após a inspeção visual encontrar o bloco preso em `opacity: 0`; título e ações agora aparecem imediatamente, mesmo se o Motion não iniciar;
+- Motion mantido como única biblioteca de animação, com Skiper UI registrado apenas como referência para evitar dependências duplicadas.
 
 ## 2026-09-05
 
