@@ -8,6 +8,13 @@ tags: [changelog]
 
 ## 2026-09-05
 
+- landing page reorganizada como balcão digital da JNE, com novo hero, caminho do pedido, categorias e vitrine alternável;
+- Motion adicionado para transições pontuais, com preferência de movimento reduzido respeitada globalmente;
+- imagem ambiental do hero produzida no Higgsfield sem texto ou rótulos de produto;
+- capas oficiais adotadas para Multivitamínico Nyer, linha Nutra Gold, Beta-Alanina e Magnésio & Inositol;
+- capa de estúdio aprovada para o Treonato de Magnésio após comparação com a embalagem;
+- tentativas incorretas de Cabelo, Pele & Unha, L-Carnitina e Super Abdomen rejeitadas por alterar textos ou detalhes do rótulo;
+- fotografias reais do verso mantidas como fonte de tabela nutricional, ingredientes e alertas;
 - branches locais comparadas com as versões publicadas após a mesclagem dos PRs anteriores;
 - 29 fotografias reais da loja processadas em WebP quadrado, sem reconstrução generativa dos rótulos;
 - fotos frontais e do verso vinculadas a 16 cadastros, incluindo os três itens mantidos fora da vitrine;

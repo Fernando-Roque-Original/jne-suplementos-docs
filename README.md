@@ -23,6 +23,7 @@ A pasta `content/` é o cofre compartilhado. Ela reúne:
 - funcionamento do carrinho e do WhatsApp;
 - publicação no GitHub Pages;
 - curso básico do código Next.js;
+- decisões de design da landing page, animações e acessibilidade;
 - planejamento do painel de produtos e de uma futura operação de e-commerce;
 - identidade visual, favicon e imagens de compartilhamento.
 

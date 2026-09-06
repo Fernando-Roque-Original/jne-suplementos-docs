@@ -11,6 +11,8 @@ tags:
 
 O site aceita uma imagem principal e uma galeria opcional para cada produto ou sabor. A galeria atual usa fotografias reais da loja: a frente apresenta a embalagem e o verso permite consultar o rótulo.
 
+Na vitrine, a ordem de preferência é: arquivo oficial da marca, arquivo autorizado de distribuidor, recorte fiel da foto real e, por último, uma versão de estúdio assistida por IA. A fotografia real do verso continua na galeria como fonte de conferência.
+
 Todos os caminhos abaixo são relativos à pasta do repositório `jne-suplementos`. Eles funcionam em qualquer computador.
 
 ## Onde ficam os arquivos
@@ -45,6 +47,9 @@ O script contém um mapa entre os nomes recebidos e os nomes finais. Quando cheg
 
 > [!important] Integridade do rótulo
 > Não use uma ferramenta generativa para “melhorar” tabela nutricional, ingredientes, alertas, lote ou validade. Ela pode inventar caracteres e dosagens. Quando o texto não estiver legível, fotografe novamente em boa luz e registre a pendência.
+
+> [!warning] Aprovação de packshot assistido por IA
+> Compare nome, marca, peso, sabor, tampa, cores e texto frontal com a fotografia original. Em setembro de 2026, tentativas para Cabelo, Pele & Unha, L-Carnitina e Super Abdomen foram rejeitadas porque alteraram palavras ou detalhes do rótulo. Uma imagem visualmente boa não deve ser publicada se a embalagem ficou incorreta.
 
 ## Como cadastrar frente e verso
 

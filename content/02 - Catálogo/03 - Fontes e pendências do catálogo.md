@@ -31,6 +31,8 @@ Esta página registra as fontes consultadas em 21 de agosto de 2026. Ela evita m
 | Ômega 3 Nutra Gold                | [Nutra Gold](https://nutragold.com.br/produtos/omega-3/)                                                      | foto oficial e conferência do produto    |
 | Hair Bomb Nutra Gold              | [Nutra Gold](https://nutragold.com.br/produtos/hair-bomb-cabelo-pele-e-unhas/)                                | foto oficial e conferência do produto    |
 | Nutra Energy                      | [Nutra Gold](https://nutragold.com.br/produtos/nutra-energy/)                                                 | foto oficial e conferência do produto    |
+| Beta-Alanina Bluebooster 300 g    | [Lifecenter](https://www.lifecentersuplementos.com.br/bluebooster-beta-alanina-300g)                          | imagem principal da embalagem            |
+| Magnésio & Inositol 300 g         | [Lifecenter](https://www.lifecentersuplementos.com.br/bluebooster-mangesio-inositol-300g-sabor-maracuja)      | imagem principal da embalagem            |
 
 > [!important]
 > Preços encontrados nessas páginas não são preços da JNE. O item fica `sobConsulta: true` até a loja informar o valor e o estoque locais.
@@ -53,7 +55,9 @@ As fotos oficiais por sabor foram vinculadas ao Whey Nutra Gold, Hydro Protein, 
 
 Na página comercial do Beef Protein aparece uma chamada de 31 g de proteína, mas a imagem oficial da tabela nutricional informa 32 g. O catálogo mantém 32 g porque o rótulo é a fonte principal.
 
-As fotos enviadas pela loja em 19 de agosto de 2026 foram usadas para identificar produtos, transcrever os rótulos e cadastrar as marcas que não possuem uma foto oficial confiável na internet. Antes de entrarem no projeto, as fotos frontais foram giradas automaticamente, enquadradas em fundo branco, reduzidas para 1200 por 1200 pixels e convertidas para WebP. Esse tratamento mantém todos os cards do catálogo no mesmo tamanho sem substituir o rótulo real por uma imagem parecida.
+As fotos enviadas pela loja em 19 de agosto de 2026 foram usadas para identificar produtos, transcrever os rótulos e cadastrar as marcas que não possuem uma foto oficial confiável na internet. As capas aprovadas foram reduzidas para até 1200 por 1200 pixels e convertidas para WebP. As fotos reais do verso continuam sem reconstrução generativa.
+
+O Treonato de Magnésio recebeu uma capa com fundo de estúdio assistida por IA e aprovada somente para apresentação da vitrine. As tentativas para Cabelo, Pele & Unha, L-Carnitina e Super Abdomen foram descartadas porque mudaram textos ou detalhes da embalagem. Nesses casos, a fotografia real foi mantida. Tabela e ingredientes continuam vinculados exclusivamente ao rótulo real ou à fonte oficial.
 
 ## Produtos cadastrados a partir das fotos da loja
 

@@ -34,7 +34,7 @@ Registro das principais alterações realizadas no projeto.
 
 ### [[06 - Código do site]]
 
-Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp.
+Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp. Inclui [[06 - Código do site/03 - Design e animações|Design e animações]], com as decisões da landing page e o uso responsável de bibliotecas.
 
 ### [[07 - Evolução para e-commerce]]
 
