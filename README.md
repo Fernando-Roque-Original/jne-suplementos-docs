@@ -18,11 +18,13 @@ A pasta `content/` é o cofre compartilhado. Ela reúne:
 
 - visão geral do projeto;
 - manutenção de produtos, imagens, preços e estoque;
+- galeria de frente e rótulo e tratamento reproduzível das fotos da loja;
 - cadastro de perfis nutricionais;
 - funcionamento do carrinho e do WhatsApp;
 - publicação no GitHub Pages;
 - curso básico do código Next.js;
-- planejamento do painel de produtos e de uma futura operação de e-commerce.
+- decisões de design da landing page, animações e acessibilidade;
+- planejamento do painel de produtos e de uma futura operação de e-commerce;
 - identidade visual, favicon e imagens de compartilhamento.
 
 ## Editar no Obsidian

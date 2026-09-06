@@ -28,6 +28,7 @@ O cadastro foi reorganizado para diminuir a repetição. Agora existem três res
 - um produto pode ter uma tabela nutricional e outra de aminoácidos ou ativos;
 - ingredientes e observações são campos opcionais;
 - a página troca foto e rótulo quando o sabor é selecionado;
+- a página oferece uma galeria opcional com frente e verso da embalagem;
 - o build detecta linhas com quantidade incorreta de valores;
 - tabelas extensas recebem rolagem interna no celular;
 - URLs antigas dos produtos continuam redirecionando para o cadastro atual.
@@ -79,7 +80,7 @@ Se houver uma nova embalagem ou novo lote, repita a conferência. O rótulo fís
 
 ## Fluxo atual para adicionar um produto
 
-1. Coloque a fotografia em `src/assets/produtos/`.
+1. Coloque a fotografia em `src/assets/produtos/` ou trate o lote conforme [[05 - Galeria e tratamento de fotos]].
 2. Importe a imagem em `src/data/produtos.ts`.
 3. Cadastre os dados comerciais e os sabores.
 4. Crie o perfil em `src/data/perfis-nutricionais.ts`.
@@ -95,6 +96,13 @@ Exemplo de variação com foto e rótulo próprios:
   id: "chocolate",
   nome: "Chocolate",
   imagem: imgChocolate,
+  galeria: [
+    {
+      imagem: imgChocolate,
+      alt: "Produto sabor chocolate visto de frente",
+      legenda: "Frente da embalagem",
+    },
+  ],
   infoNutricional: perfilChocolate,
   estoque: 5,
 }

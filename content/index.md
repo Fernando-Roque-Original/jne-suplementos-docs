@@ -18,7 +18,7 @@ Apresentação do projeto, tecnologias, estrutura do frontend e [[01 - Visão ge
 
 ### [[02 - Catálogo]]
 
-Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
+Instruções para adicionar imagens, cadastrar produtos, estruturar rótulos, alterar preços e controlar estoque. Inclui o fluxo rápido de perfis nutricionais, a proposta de gerador interno, a [[02 - Catálogo/05 - Galeria e tratamento de fotos|galeria de fotos]] e o [[02 - Catálogo/04 - Checkup do catálogo|checkup item a item]].
 
 ### [[03 - Pedido e WhatsApp]]
 
@@ -34,7 +34,7 @@ Registro das principais alterações realizadas no projeto.
 
 ### [[06 - Código do site]]
 
-Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp.
+Mapa das páginas, componentes e funções, com instruções para alterar textos, layout, cabeçalho, rodapé, catálogo, carrinho e integração com o WhatsApp. Inclui [[06 - Código do site/03 - Design e animações|Design e animações]], com as decisões da landing page e o uso responsável de bibliotecas.
 
 ### [[07 - Evolução para e-commerce]]
 

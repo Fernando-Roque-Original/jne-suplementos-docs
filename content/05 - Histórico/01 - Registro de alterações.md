@@ -6,6 +6,41 @@ tags: [changelog]
 
 # Registro de alterações
 
+## 2026-09-06
+
+- capas profissionais aplicadas a Cabelo, Pele & Unha, L-Carnitina, Super Abdomen e Tribullus Gold;
+- imagens principais padronizadas em 1200 por 1200 pixels, com fundo branco e sem mãos ou prateleiras;
+- fotografias originais da frente e do verso preservadas na galeria para conferência do rótulo;
+- fonte externa do Super Abdomen registrada e comparada com a embalagem fotografada na loja;
+- tabelas nutricionais, ingredientes, alertas e situação de publicação mantidos sem alterações.
+- revisão da landing e do catálogo orientada pelas regras de acessibilidade, toque, desempenho e movimento da UI/UX Pro Max;
+- indicador animado adicionado às abas da vitrine com `layoutId`;
+- grade animada e reutilizável criada para as mudanças de busca e categoria;
+- botão acessível para limpar a busca adicionado ao catálogo;
+- menu móvel atualizado com entrada e saída curtas por `AnimatePresence`;
+- animação de entrada retirada do conteúdo principal do hero após a inspeção visual encontrar o bloco preso em `opacity: 0`; título e ações agora aparecem imediatamente, mesmo se o Motion não iniciar;
+- Motion mantido como única biblioteca de animação, com Skiper UI registrado apenas como referência para evitar dependências duplicadas.
+
+## 2026-09-05
+
+- landing page reorganizada como balcão digital da JNE, com novo hero, caminho do pedido, categorias e vitrine alternável;
+- Motion adicionado para transições pontuais, com preferência de movimento reduzido respeitada globalmente;
+- imagem ambiental do hero produzida no Higgsfield sem texto ou rótulos de produto;
+- capas oficiais adotadas para Multivitamínico Nyer, linha Nutra Gold, Beta-Alanina e Magnésio & Inositol;
+- packshots de distribuidores adotados para Ioimbina & Long Jack e Diamond New Green após comparação com as fotos da loja;
+- capa de estúdio aprovada para o Treonato de Magnésio após comparação com a embalagem;
+- tentativas incorretas de Cabelo, Pele & Unha, L-Carnitina e Super Abdomen rejeitadas por alterar textos ou detalhes do rótulo;
+- fotografias reais do verso mantidas como fonte de tabela nutricional, ingredientes e alertas;
+- branches locais comparadas com as versões publicadas após a mesclagem dos PRs anteriores;
+- 29 fotografias reais da loja processadas em WebP quadrado, sem reconstrução generativa dos rótulos;
+- fotos frontais e do verso vinculadas a 16 cadastros, incluindo os três itens mantidos fora da vitrine;
+- galeria acessível criada na página do produto, com legenda, texto alternativo e reinício ao trocar de sabor;
+- foto real do Whey Nutra Gold vinculada somente ao sabor morango;
+- créditos de fotos externas removidos dos produtos que agora usam fotografias próprias da loja;
+- comando reproduzível de tratamento de imagens e manual portável adicionados ao site e ao Quartz;
+- regra de integridade documentada para impedir edição generativa de tabelas, ingredientes e dosagens.
+- resolução de módulos e tipos auxiliares ajustados para validar o Quartz com TypeScript 7.
+
 ## 2026-08-21
 
 - identidade visual oficial aplicada ao cabeçalho, rodapé e apresentação da loja;

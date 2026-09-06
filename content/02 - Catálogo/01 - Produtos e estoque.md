@@ -11,6 +11,8 @@ Todos os caminhos desta página são relativos à pasta principal do repositóri
 
 **Imagens:** `src/assets/produtos/`
 
+**Galerias tratadas:** `src/assets/produtos/galeria/`
+
 **Nomes, preços, categorias e estoque:** `src/data/produtos.ts`
 
 **Perfis dos rótulos:** `src/data/perfis-nutricionais.ts`
@@ -93,6 +95,7 @@ Adicione o produto dentro da lista `produtos`:
 | `descricao`          | Descrição curta do produto                                         | `Creatina pura...`             |
 | `preco`              | Preço sem `R$`, usando ponto decimal                               | `99.90`                        |
 | `imagem`             | Nome da importação feita no topo                                   | `imgCreatinaIntegral`          |
+| `galeria`            | Lista opcional de fotos, textos alternativos e legendas            | frente e rótulo                |
 | `peso`               | Peso ou quantidade da embalagem                                    | `300g`                         |
 | `estoque`            | Quantidade disponível                                              | `10`                           |
 | `sobConsulta`        | Mostra consulta pelo WhatsApp sem adicionar valor zero ao carrinho | `true`                         |
@@ -165,7 +168,7 @@ infoNutricional: perfilNutraWhey,
 
 As variações também podem apontar para perfis próprios quando o rótulo muda por sabor. As tabelas, ingredientes e observações ficam em `src/data/perfis-nutricionais.ts`. Um único componente exibe todos os formatos, inclusive múltiplas porções, perfil de aminoácidos e ativos por cápsula.
 
-Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo e [[03 - Fontes e pendências do catálogo]] para verificar as origens das fotos e rótulos.
+Consulte [[02 - Cadastro rápido e perfis nutricionais]] para o passo a passo completo, [[05 - Galeria e tratamento de fotos]] para preparar frente e verso e [[03 - Fontes e pendências do catálogo]] para verificar as origens das fotos e rótulos.
 
 ## Checklist
 
@@ -184,7 +187,7 @@ Troque os itens de teste por produtos reais e confirme a autorização de uso da
 
 ## Estado atual do catálogo
 
-O catálogo possui 25 produtos ativos. BCAA e glutamina demonstrativos foram desativados. Fotos oficiais por sabor foram adicionadas ao Whey Nutra Gold, Hydro Protein, Whey Gourmet Nyer, Beef Protein Nyer, Dark Pump e Gummy Hair. Os novos itens Nutra Gold usam fotos oficiais; os produtos sem imagem pública confiável usam as fotos da loja normalizadas em WebP. Acessórios usam fotografias identificadas como referência.
+O catálogo possui 25 produtos ativos. BCAA e glutamina demonstrativos foram desativados. As 29 fotografias enviadas pela loja foram normalizadas em WebP e vinculadas a 16 cadastros, incluindo itens mantidos fora da vitrine. Os produtos com foto de verso exibem uma galeria de frente e rótulo. Acessórios continuam usando fotografias identificadas como referência.
 
 Os produtos sem preço local confirmado usam `sobConsulta: true`. Consulte [[03 - Fontes e pendências do catálogo]] antes da divulgação comercial.
 
