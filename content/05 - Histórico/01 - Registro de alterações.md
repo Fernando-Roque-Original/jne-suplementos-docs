@@ -6,6 +6,14 @@ tags: [changelog]
 
 # Registro de alterações
 
+## 2026-09-06
+
+- capas profissionais aplicadas a Cabelo, Pele & Unha, L-Carnitina, Super Abdomen e Tribullus Gold;
+- imagens principais padronizadas em 1200 por 1200 pixels, com fundo branco e sem mãos ou prateleiras;
+- fotografias originais da frente e do verso preservadas na galeria para conferência do rótulo;
+- fonte externa do Super Abdomen registrada e comparada com a embalagem fotografada na loja;
+- tabelas nutricionais, ingredientes, alertas e situação de publicação mantidos sem alterações.
+
 ## 2026-09-05
 
 - landing page reorganizada como balcão digital da JNE, com novo hero, caminho do pedido, categorias e vitrine alternável;
