@@ -8,6 +8,9 @@ tags: [changelog]
 
 ## 2026-09-06
 
+- origem local `127.0.0.1` autorizada no Next.js para impedir que a hidratação e os cliques sejam bloqueados durante o desenvolvimento;
+- troca de sabores, botões de quantidade e inclusão no carrinho conferidos no navegador;
+- carrinho ajustado para guardar e mostrar a imagem correspondente ao sabor selecionado;
 - galerias públicas de 13 produtos limpas para retirar fotos feitas dentro da loja;
 - imagens com mãos, balcão, prateleiras ou ambiente comercial deixaram de ser exibidas nas páginas dos produtos;
 - fotos internas dos rótulos mantidas apenas como fonte de conferência de tabela nutricional, ingredientes e alertas;
