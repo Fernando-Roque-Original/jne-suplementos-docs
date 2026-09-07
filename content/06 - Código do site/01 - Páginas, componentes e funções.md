@@ -138,7 +138,9 @@ Endereço: `/produto/identificador-do-produto`
 
 O trecho `[produtoId]` significa que a rota é dinâmica. O valor vem do campo `id` cadastrado em `src/data/produtos.ts`. A página busca o produto, apresenta galeria, preço, estoque, descrição, variações e informações nutricionais, e permite adicionar o item ao carrinho.
 
-`ProdutoCliente.tsx` mantém o índice da fotografia selecionada. Quando o cliente troca o sabor, esse índice volta a zero e a página usa primeiro a galeria da variação; quando ela não existe, usa a galeria geral ou a imagem principal.
+`ProdutoCliente.tsx` mantém o índice da fotografia selecionada. Quando o cliente troca o sabor, esse índice volta a zero e a página usa primeiro a galeria da variação; quando ela não existe, usa a imagem específica da variação e, por último, a imagem principal. A tabela nutricional e os ingredientes também acompanham o sabor selecionado.
+
+Ao adicionar o produto, `src/lib/carrinho.tsx` grava o nome e a imagem da variação escolhida. Assim, a embalagem mostrada no carrinho corresponde ao sabor selecionado na página.
 
 Não altere o nome `[produtoId]` isoladamente. Ele está ligado à leitura do identificador dentro do arquivo.
 
@@ -225,6 +227,14 @@ Funções principais:
 - `alterarQuantidade`: atualiza a quantidade e impede ultrapassar o estoque;
 - `limpar`: esvazia o carrinho;
 - `useCarrinho`: permite que páginas e componentes acessem os dados do carrinho.
+
+## Quando a página aparece, mas os botões não funcionam
+
+Se o produto carregar, mas sabor, quantidade e carrinho não responderem, confira o endereço e o terminal do `npm run dev`. O Next.js precisa carregar os arquivos JavaScript para transformar o HTML em uma página interativa; essa etapa é chamada de hidratação.
+
+O projeto aceita `localhost` e `127.0.0.1` no desenvolvimento. A origem `127.0.0.1` está autorizada em `next.config.ts` por meio de `allowedDevOrigins`. Se o terminal informar que a origem foi bloqueada, pare o servidor, execute `npm run dev` novamente e atualize a página.
+
+Evite executar `npm run build` enquanto `npm run dev` estiver usando a mesma pasta `.next`. Pare o servidor de desenvolvimento, gere o build e depois inicie o servidor novamente.
 
 ### Mensagem do WhatsApp
 

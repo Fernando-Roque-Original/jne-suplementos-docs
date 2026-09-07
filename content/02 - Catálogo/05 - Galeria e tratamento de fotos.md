@@ -1,6 +1,6 @@
 ---
 title: Galeria e tratamento de fotos
-description: Como preparar fotografias reais da loja e mostrar frente e rótulo de cada produto.
+description: Como escolher, preparar e publicar imagens profissionais dos produtos.
 tags:
   - catálogo
   - imagens
@@ -9,9 +9,11 @@ tags:
 
 # Galeria e tratamento de fotos
 
-O site aceita uma imagem principal e uma galeria opcional para cada produto ou sabor. A galeria atual usa fotografias reais da loja: a frente apresenta a embalagem e o verso permite consultar o rótulo.
+O site aceita uma imagem principal e uma galeria opcional para cada produto ou sabor. A área pública deve mostrar somente imagens limpas e profissionais, sem mãos, balcão, prateleiras, pessoas ou outros objetos ao fundo.
 
-Na vitrine, a ordem de preferência é: arquivo oficial da marca, arquivo autorizado de distribuidor, recorte fiel da foto real e, por último, uma versão de estúdio assistida por IA. A fotografia real do verso continua na galeria como fonte de conferência.
+Na vitrine, a ordem de preferência é: arquivo oficial da marca, arquivo autorizado de distribuidor, recorte fiel com fundo removido e, por último, uma versão de estúdio assistida por IA. Uma foto do rótulo só pode aparecer publicamente quando também for uma imagem limpa fornecida pela marca ou por um distribuidor autorizado.
+
+As fotografias feitas dentro da loja continuam úteis para conferir tabela nutricional, ingredientes, alertas, peso e sabor. Elas são material interno de referência e não devem ser vinculadas ao campo `galeria`.
 
 Todos os caminhos abaixo são relativos à pasta do repositório `jne-suplementos`. Eles funcionam em qualquer computador.
 
@@ -20,7 +22,7 @@ Todos os caminhos abaixo são relativos à pasta do repositório `jne-suplemento
 | Conteúdo                        | Caminho                                          |
 | ------------------------------- | ------------------------------------------------ |
 | Fotos comuns do catálogo        | `src/assets/produtos/`                           |
-| Fotos reais tratadas            | `src/assets/produtos/galeria/`                   |
+| Material interno de conferência | `src/assets/produtos/galeria/`                   |
 | Processo de tratamento          | `scripts/tratar-fotos-produtos.mjs`              |
 | Relação entre produto e galeria | `src/data/produtos.ts`                           |
 | Formato dos campos              | `src/data/tipos.ts`                              |
@@ -51,13 +53,25 @@ O script contém um mapa entre os nomes recebidos e os nomes finais. Quando cheg
 > [!warning] Aprovação de packshot assistido por IA
 > Compare nome, marca, peso, sabor, tampa, cores e texto frontal com a fotografia original. Em setembro de 2026, tentativas para Cabelo, Pele & Unha, L-Carnitina e Super Abdomen foram rejeitadas porque alteraram palavras ou detalhes do rótulo. Uma imagem visualmente boa não deve ser publicada se a embalagem ficou incorreta.
 
-## Como cadastrar frente e verso
+## Regra para a galeria pública
+
+Antes de adicionar uma foto à galeria, confirme todos estes pontos:
+
+- fundo branco, transparente ou de estúdio discreto;
+- nenhuma mão, mesa, prateleira, pessoa ou produto diferente visível;
+- embalagem correspondente à marca, ao peso e ao sabor cadastrados;
+- texto do rótulo sem reconstrução ou alteração por inteligência artificial;
+- autorização de uso da marca, do fabricante ou do distribuidor.
+
+Se a única imagem do rótulo tiver sido fotografada na loja, use-a apenas para digitar e conferir os dados. Nesse caso, publique somente a imagem principal limpa.
+
+## Como cadastrar uma galeria profissional
 
 Importe as fotos em `src/data/produtos.ts`:
 
 ```ts
-import imgProdutoFrente from "@/assets/produtos/galeria/produto-frente.webp"
-import imgProdutoRotulo from "@/assets/produtos/galeria/produto-rotulo.webp"
+import imgProdutoFrente from "@/assets/produtos/produto-frente.webp"
+import imgProdutoRotuloOficial from "@/assets/produtos/produto-rotulo-oficial.webp"
 ```
 
 No produto, acrescente:
@@ -71,9 +85,9 @@ galeria: [
     legenda: "Frente da embalagem",
   },
   {
-    imagem: imgProdutoRotulo,
-    alt: "Rótulo do produto com informações nutricionais",
-    legenda: "Informações do rótulo",
+    imagem: imgProdutoRotuloOficial,
+    alt: "Rótulo oficial do produto com informações nutricionais",
+    legenda: "Rótulo oficial",
   },
 ],
 ```
@@ -116,9 +130,10 @@ Ao trocar o sabor, o site volta automaticamente para a primeira imagem da galeri
 
 1. Abra a página do produto.
 2. Troque entre frente e rótulo usando mouse e teclado.
-3. Confira se cada sabor mostra somente suas próprias fotos.
-4. Compare a tabela digitada com o verso fotografado.
-5. Teste em tela pequena.
-6. Execute `npm run check` e `npm run build`.
+3. Confirme que não há mãos, mesa, prateleiras ou fundo de loja.
+4. Confira se cada sabor mostra somente suas próprias fotos.
+5. Compare a tabela digitada com o material interno do rótulo.
+6. Teste em tela pequena.
+7. Execute `npm run check` e `npm run build`.
 
 Consulte também [[01 - Produtos e estoque]], [[02 - Cadastro rápido e perfis nutricionais]] e [[04 - Checkup do catálogo]].
