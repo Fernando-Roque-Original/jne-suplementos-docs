@@ -8,9 +8,13 @@ tags: [changelog]
 
 ## 2026-09-06
 
+- galerias públicas de 13 produtos limpas para retirar fotos feitas dentro da loja;
+- imagens com mãos, balcão, prateleiras ou ambiente comercial deixaram de ser exibidas nas páginas dos produtos;
+- fotos internas dos rótulos mantidas apenas como fonte de conferência de tabela nutricional, ingredientes e alertas;
+- nova regra registrada: rótulo público somente quando houver arquivo profissional da marca ou de distribuidor autorizado;
 - capas profissionais aplicadas a Cabelo, Pele & Unha, L-Carnitina, Super Abdomen e Tribullus Gold;
 - imagens principais padronizadas em 1200 por 1200 pixels, com fundo branco e sem mãos ou prateleiras;
-- fotografias originais da frente e do verso preservadas na galeria para conferência do rótulo;
+- fotografias originais da frente e do verso preservadas somente como material interno de conferência;
 - fonte externa do Super Abdomen registrada e comparada com a embalagem fotografada na loja;
 - tabelas nutricionais, ingredientes, alertas e situação de publicação mantidos sem alterações.
 - revisão da landing e do catálogo orientada pelas regras de acessibilidade, toque, desempenho e movimento da UI/UX Pro Max;
